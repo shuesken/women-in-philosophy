@@ -11,9 +11,8 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   siteMetadata: {
-    title: 'Mikrasov Design',
-    twitterUsername: 'mikrasov',
-    disqusShortname: "mikrasov-design",
+    title: 'Women in Philosophy',
+    twitterUsername: 'PhilosophyData',
     siteUrl
   },
   plugins: [
@@ -64,7 +63,7 @@ module.exports = {
         head: true,
       },
     },
-  
+
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -91,9 +90,6 @@ module.exports = {
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
             }
           },
-          'gatsby-remark-prismjs',
-          `gatsby-remark-autolink-headers`,
-          'gatsby-remark-copy-linked-files',
         ]
       }
     },
