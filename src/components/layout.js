@@ -11,10 +11,10 @@ import './layout.css'
 export default (props) => (
   <StaticQuery
         query={graphql` {
-      logoImage: file(relativePath: { eq: "womenlogo.jpg" }) {
+      logoImage: file(relativePath: { eq: "womenlogo_dark.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 150) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fixed(width: 60) {
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
           }
         }
       }
@@ -29,15 +29,16 @@ export default (props) => (
   `}
     render={data => ( <>
             <Metadata />
-            <Navbar  className="navbar-dark" expand="sm" style={{backgroundColor: "#000"}}>
-                <Navbar.Brand href="/"><Img className="logo"  fluid={data.logoImage.childImageSharp.fluid}/></Navbar.Brand>
+            <Navbar  className="navbar-dark  sticky-top" expand="sm" style={{backgroundColor: "#000"}}>
+                <Navbar.Brand href="/"><Img className="logo"  fixed={data.logoImage.childImageSharp.fixed}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="mr-auto" >
-                        <Nav.Link href="/" className={(props.active==="about")?"active":""}>Home</Nav.Link>
-                        <Nav.Link href="/resources" className={(props.active==="cv")?"active":""}>Resources  </Nav.Link>
-                        <Nav.Link href="/about" className={(props.active==="news")?"active":""}> About  </Nav.Link>
-                        <Nav.Link href="/contact" className={(props.active==="projects")?"active":""}>Contact</Nav.Link>
+                        <Nav.Link href="/" className={(props.active==="home")?"active":""}>Home</Nav.Link>
+                        <Nav.Link href="/explore" className={(props.active==="explore")?"active":""}>Explore Data </Nav.Link>
+                        <Nav.Link href="/resources" className={(props.active==="resources")?"active":""}>Resources  </Nav.Link>
+                        <Nav.Link href="/about" className={(props.active==="about")?"active":""}> About  </Nav.Link>
+                        <Nav.Link href="/contact" className={(props.active==="contact")?"active":""}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "author": "Micheal Nekrasov <mikrasov@gmail.com>",
   "dependencies": {
+    "chart.js": "^2.9.3",
     "gatsby": "^2.23.x",
     "gatsby-image": "^2.4.x",
-    "gatsby-source-filesystem": "^2.3.x",
     "gatsby-plugin-catch-links": "^2.3.x",
     "gatsby-plugin-google-analytics": "^2.x",
     "gatsby-plugin-manifest": "^2.3.x",
@@ -17,15 +17,15 @@
     "gatsby-plugin-robots-txt": "^1.x",
     "gatsby-plugin-sharp": "^2.6.x",
     "gatsby-plugin-sitemap": "^2.x",
-    "gatsby-remark-embed-video": "^3.0.x",
-    "gatsby-remark-images": "^3.3.x",
+    "gatsby-source-filesystem": "^2.3.x",
     "gatsby-transformer-json": "^2.4.x",
-    "gatsby-transformer-remark": "^2.8.x",
     "gatsby-transformer-sharp": "^2.5.x",
     "react": "^16.13.x",
     "react-bootstrap": "^1.0.1",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.x",
-    "react-helmet": "^6.x"
+    "react-helmet": "^6.x",
+    "react-youtube": "^7.x"
   },
   "keywords": [
     "gatsby"

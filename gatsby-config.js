@@ -72,27 +72,7 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              linkImagesToOriginal: false,
-              withWebp: true
-            }
-          },
-          {
-            resolve: "gatsby-remark-embed-video",
-            options: {
-              width: 500,
-              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-            }
-          },
-        ]
-      }
-    },
+
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
