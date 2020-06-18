@@ -28,7 +28,7 @@ const chart_pie = {
         datasets: [{
             backgroundColor: ['rgb(0, 99, 132)', 'rgb(255, 99, 132)'],
             borderColor: '#333',
-            data: [80, 20]
+            data: [80.7, 19.3]
         }]
     },
     options: {
@@ -37,7 +37,7 @@ const chart_pie = {
         title: {
             display: true,
             fontSize: 20,
-            text: 'Custom  Title',
+            text: 'Authorship By Gender 2000-2009',
 
         }
     }
