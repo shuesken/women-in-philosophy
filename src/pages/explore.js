@@ -1,30 +1,15 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { graphql, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
-import { Bar } from 'react-chartjs-2';
 
-const data =  {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45]
-    }]
-}
+import DataSource from '../components/datasource'
+
+
 
 const IndexPage = () => (
     <Layout>
-        <h1>What do you want to find out?</h1>
-        <p></p>
+        <DataSource title={"JTOR Data 1900-2010"}>This data is from the JSTOR network dataset, with a special focus on philosophy journals. The JSTOR database contains more than 8.3 million documents, with dates ranging between the 1500s and 2011, at the time of data collection. We isolate our analysis to a part of the corpus we call the “network dataset.” This subset includes 1.8 million documents that either cited other JSTOR articles or were cited by other JSTOR articles. Except where specified in the results below, the comparisons conducted in this study were planned beforehand. </DataSource>
 
-        <Bar
-            data={data}
-            width={100}
-            height={50}
-            options={{ maintainAspectRatio: false }}
-        />
+
     </Layout>
 )
 

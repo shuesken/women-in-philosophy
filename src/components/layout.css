@@ -623,4 +623,10 @@ pre tt:after {
 
 .banner{
   margin-bottom: 1em;
+  background: #333;
+}
+
+.banner .gatsby-image-wrapper{
+  max-width: 1100px;
+  margin: auto;
 }

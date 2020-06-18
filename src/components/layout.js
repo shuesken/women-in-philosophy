@@ -43,7 +43,7 @@ export default (props) => (
                 </Navbar.Collapse>
             </Navbar>
 
-            <Img className="banner"  fluid={data.bannerImage.childImageSharp.fluid}/>
+            <div className="banner"> <Img   fluid={data.bannerImage.childImageSharp.fluid}/> </div>
             <div className={'container'}><div id='content' className={props.className}>{props.children}</div></div>
         </>
     )}
