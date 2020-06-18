@@ -621,12 +621,11 @@ pre tt:after {
   }
 }
 
-.banner{
-  margin-bottom: 1em;
-  background: #333;
+.container {
+  margin-top: 20px;
 }
 
-.banner .gatsby-image-wrapper{
+.banner{
   max-width: 1100px;
-  margin: auto;
+  margin: 20px auto;
 }

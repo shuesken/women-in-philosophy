@@ -35,7 +35,7 @@ export default (props) => (
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="mr-auto" >
                         <Nav.Link href="/" className={(props.active==="home")?"active":""}>Home</Nav.Link>
-                        <Nav.Link href="/explore" className={(props.active==="explore")?"active":""}>Explore Data </Nav.Link>
+                        <Nav.Link href="/data" className={(props.active==="explore")?"active":""}>Explore Data </Nav.Link>
                         <Nav.Link href="/resources" className={(props.active==="resources")?"active":""}>Resources  </Nav.Link>
                         <Nav.Link href="/about" className={(props.active==="about")?"active":""}> About  </Nav.Link>
                         <Nav.Link href="/contact" className={(props.active==="contact")?"active":""}>Contact</Nav.Link>
@@ -43,7 +43,7 @@ export default (props) => (
                 </Navbar.Collapse>
             </Navbar>
 
-            <div className="banner"> <Img   fluid={data.bannerImage.childImageSharp.fluid}/> </div>
+
             <div className={'container'}><div id='content' className={props.className}>{props.children}</div></div>
         </>
     )}
