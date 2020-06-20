@@ -33,6 +33,12 @@
     box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.04);
 }
 
+.member .pi{
+    border-top-color: #005780;
+    height: 395px;
+}
+
+
 .member .professor{
     border-top-color: #800006 ;
     height: 395px;

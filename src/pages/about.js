@@ -35,15 +35,21 @@ export default function(){
         <strong>Contact us at:</strong> <a href="mailto:dataonwomen@gmail.com">dataonwomen@gmail.com</a>
 
         <br/><br/>
-        <h1>Professors</h1>
-
-        <Member name={"Nicole Hassoun"} photo={profileImage["Hassoun"]} position={"(Executive Director)"} className={"professor"}>
+        <h1>Principal Investigators</h1>
+        <Member name={"Nicole Hassoun"} photo={profileImage["Hassoun"]} position={"(Executive Director)"} className={"pi"}>
             Nicole Hassoun is an associate professor in philosophy at Binghamton University. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations (Cambridge University Press, 2012) was runner up for the APA book prize and her articles appear in journals like the American Philosophical Quarterly, Journal of Development Economics, The Australasian Journal of Philosophy, PLOS ONE, The European Journal of Philosophy, and Utilitas.
         </Member>
 
-        <Member name={"Eric Schwitzgebel"} photo={profileImage["schwitzgebel"]} position={"(Co-Director)" } className={"professor"}>
+        <Member name={"Eric Schwitzgebel"} photo={profileImage["schwitzgebel"]} position={"(Co-Director)" } className={"pi"}>
             Eric Schwitzgebel is a professor of philosophy at University of California, Riverside. Recent works include: Perplexities of Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine, 2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the APA Committee on the Status and Future of the Profession. On his blog, and more recently in op-eds for The Los Angeles Times, he regularly critiques the narrowness and homogeneity of academic philosophy in the mainstream Anglophone tradition.
         </Member>
+        <Member name={"Sherri Conklin "} photo={profileImage["conklin"]} position={"(Co-Director)"}  className={"pi"}>
+            As a PhD student in the Department of Philosophy at UCSB, Sherri conducts research in moral worth, normative theory, and moral psychology.
+        </Member>
+
+        <br/><br/>
+        <h1>Faculty</h1>
+
 
         <Member name={"Julie Van Camp"} photo={profileImage["vancamp"]} position={"" } className={"professor"}>
             Julie C. Van Camp is Professor Emerita of Philosophy at California State University, Long Beach, where she taught philosophy of art, philosophy of law, and applied ethics. She is currently Executive Director & Secretary-Treasurer of the American Society for Aesthetics. She was privileged to study with Elizabeth Lane Beardsley at Temple University and inspired to encourage women to pursue philosophy by a former male colleague who told her long ago that "female philosopher is an oxymoron."
@@ -105,13 +111,14 @@ export default function(){
             Michael Rea is Rev. John A. O’Brien Professor of Philosophy at the University of Notre Dame, and is Affiliated Faculty in the Notre Dame Gender Studies Program. His research focuses primarily on topics in metaphysics, philosophy of religion, and analytic theology.
         </Member>
 
+        <Member name={"Michael Nekrasov "} photo={profileImage["nekrasov"]} position={""}  className={"professor"}>
+           Michael has a Ph.D from UC Santa Barbara in Computer Science. His work focuses on wireless networks in challenged environments. In this project he provides technical support such as statistical analysis of large data sets, and web development.
+        </Member>
+
 
 
         <br/><br/>
         <h1>Graduate Students</h1>
-        <Member name={"Sherri Conklin "} photo={profileImage["conklin"]} position={"(Co-Director)"}  className={"student"}>
-            As a PhD student in the Department of Philosophy at UCSB, Sherri conducts research in moral worth, normative theory, and moral psychology.
-        </Member>
 
         <Member name={"Jenn Dum"} photo={profileImage["dum"]} position={""}  className={"student"}>
             Jenn Dum is a Ph.D. Student in Philosophy at Binghamton University, SUNY. Her research interests are in Social and Political Philosophy, Applied Ethics, and Philosophy of Education.
