@@ -39,7 +39,7 @@
 }
 
 
-.member .professor{
+.member .advisor{
     border-top-color: #800006 ;
     height: 395px;
 }
@@ -51,6 +51,11 @@
 
 .member .staff{
     border-top-color: #ffcb62 ;
+    height: 395px;
+}
+
+.member .c{
+    border-top-color: #c862ff;
     height: 250px;
 }
 

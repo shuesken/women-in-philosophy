@@ -47,72 +47,84 @@ export default function(){
             As a PhD student in the Department of Philosophy at UCSB, Sherri conducts research in moral worth, normative theory, and moral psychology.
         </Member>
 
+
+
         <br/><br/>
-        <h1>Faculty</h1>
+        <h1>Advisory Board</h1>
 
 
-        <Member name={"Julie Van Camp"} photo={profileImage["vancamp"]} position={"" } className={"professor"}>
+        <Member name={"Julie Van Camp"} photo={profileImage["vancamp"]} position={"" } className={"advisor"}>
             Julie C. Van Camp is Professor Emerita of Philosophy at California State University, Long Beach, where she taught philosophy of art, philosophy of law, and applied ethics. She is currently Executive Director & Secretary-Treasurer of the American Society for Aesthetics. She was privileged to study with Elizabeth Lane Beardsley at Temple University and inspired to encourage women to pursue philosophy by a former male colleague who told her long ago that "female philosopher is an oxymoron."
         </Member>
 
-        <Member name={"Sally Haslanger"} photo={profileImage["haslanger"]} position={"" } className={"professor"}>
+        <Member name={"Sally Haslanger"} photo={profileImage["haslanger"]} position={"" } className={"advisor"}>
             Sally Haslanger is Ford Professor of Philosophy and Women's and Gender Studies at the Massachusetts Institute of Technology. She specializes in metaphysics, epistemology, feminist theory, and critical race theory. Her book Resisting Reality: Social Construction and Social Critique (Oxford 2012) won the Joseph B. Gittler award for work in philosophy of the social sciences. She was elected to the American Academy of Arts and Sciences in 2015.
         </Member>
 
-        <Member name={"Ruth Chang"} photo={profileImage["chang"]} position={"" } className={"professor"}>
+        <Member name={"Ruth Chang"} photo={profileImage["chang"]} position={"" } className={"advisor"}>
             Ruth Chang is a philosopher at Rutgers University, New Brunswick. Before arriving at Rutgers, she was a Junior Research Fellow at Balliol College, Oxford where she was completing her dissertation. She has also held visiting positions in the philosophy department at the University of California, Los Angeles and the University of Chicago Law School. Before her life as a philosopher, she worked as a law associate on a (pro bono) death penalty case and several (non pro bono) product liability cases. She has a J.D. from Harvard Law School and an A.B. from Dartmouth College.
         </Member>
 
 
-        <Member name={"Tom Dougherty"} photo={profileImage["dougherty"]} position={"" } className={"professor"}>
+        <Member name={"Tom Dougherty"} photo={profileImage["dougherty"]} position={"" } className={"advisor"}>
             Tom Dougherty is a University Lecturer in the Philosophy Faculty at the University of Cambridge and a Fellow of Trinity Hall. His research focuses on moral and political philosophy.
         </Member>
 
 
-        <Member name={"Kenneth Clatterbaugh"} photo={profileImage["clatterbaugh"]} position={"" } className={"professor"}>
+        <Member name={"Kenneth Clatterbaugh"} photo={profileImage["clatterbaugh"]} position={"" } className={"advisor"}>
             Kenneth C. Clatterbaugh is an American philosopher. He is Chair of the department of Philosophy at the University of Washington. His interests are modern philosophy, social philosophy, and gender studies.
         </Member>
 
 
-        <Member name={"Kathryn Norlock"} photo={profileImage["norlock"]} position={"" } className={"professor"}>
+        <Member name={"Kathryn Norlock"} photo={profileImage["norlock"]} position={"" } className={"advisor"}>
             Kathryn J. Norlock is the Kenneth Mark Drain Chair in Ethics and Associate Professor of Philosophy at Trent University in Peterborough, Ontario, Canada. She is the President of the Society for Analytical Feminism (SAF), and past president of the Canadian Society for Women In Philosophy (CSWIP). She is a co-founder and co-editor of Feminist Philosophy Quarterly, an open-access, peer-reviewed journal.
         </Member>
 
-        <Member name={"Charles Mills"} photo={profileImage["mills"]} position={"" } className={"professor"}>
+        <Member name={"Charles Mills"} photo={profileImage["mills"]} position={"" } className={"advisor"}>
             Charles W. Mills is John Evans Professor of Moral and Intellectual Philosophy at Northwestern University. He works in the general area of oppositional political philosophy, with a special focus on race.
         </Member>
 
-        <Member name={"Edouard Machery"} photo={profileImage["machery"]} position={"" } className={"professor"}>
+        <Member name={"Edouard Machery"} photo={profileImage["machery"]} position={"" } className={"advisor"}>
             Edouard Machery is Professor in the Department of History and Philosophy of Science at the University of Pittsburgh, the incoming Director of the Center for Philosophy of Science at the University of Pittsburgh . His research focuses on the philosophical issues raised by psychology and cognitive neuroscience. He was awarded the Chancellor’s Distinguished Research Award by the University of Pittsburgh, the Stanton Prize by the Society for Philosophy and Psychology, and holds a Regular Visiting Distinguished Professorship at Eidyn (Edinburgh).
         </Member>
 
-        <Member name={"Meena Krishnamurthy"} photo={profileImage["krishnamurthy"]} position={"" } className={"professor"}>
+        <Member name={"Meena Krishnamurthy"} photo={profileImage["krishnamurthy"]} position={"" } className={"advisor"}>
             Meena Krishnamurthy is an Assistant Professor in the Department of Philosophy and in the Program in Philosophy, Politics, and Economics at the University of Michigan. She works in social and political philosophy, mostly in the area of normative democratic theory.
         </Member>
 
-        <Member name={"Amia Srinivasan"} photo={profileImage["srinivasan"]} position={"" } className={"professor"}>
+        <Member name={"Amia Srinivasan"} photo={profileImage["srinivasan"]} position={"" } className={"advisor"}>
             Amia Srinivasan is a lecturer (assistant professor) at University College London. She works on topics in epistemology, ethics, metaphilosophy, social and political philosophy, and feminism.
         </Member>
 
-        <Member name={"Ned Markosian"} photo={profileImage["markosian"]} position={"" } className={"professor"}>
+        <Member name={"Ned Markosian"} photo={profileImage["markosian"]} position={"" } className={"advisor"}>
             Ned Markosian, is professor of philosophy at the University of Massachusetts at Amherst. He works primarily in metaphysics.
         </Member>
 
-        <Member name={"Andrew Janiak"} photo={profileImage["janiak"]} position={"" } className={"professor"}>
+        <Member name={"Andrew Janiak"} photo={profileImage["janiak"]} position={"" } className={"advisor"}>
             Janiak is Professor of Philosophy, Chair of the Department, and the Chair of the Bass Society of Fellows at Duke. He is a co-leader of Project Vox, an international enterprise that seeks to recover the lost voices of women in the history of modern science and philosophy.
         </Member>
 
-        <Member name={"Carolyn Jennings"} photo={profileImage["jennings"]} position={"" } className={"professor"}>
+        <Member name={"Carolyn Jennings"} photo={profileImage["jennings"]} position={"" } className={"advisor"}>
             Carolyn Jennings is an assistant professor of philosophy at University of California, Merced. Recent works include: “Action without Attention” (with B. Nanay, Analysis, forthcoming), “The Standard Theory of Conscious Perception” (Proceedings of the 37th Annual Conference of the Cognitive Science Society, 2015), “Consciousness without Attention” (Journal of the American Philosophical Association, 2015), “Attention and Perceptual Organization” (Philosophical Studies, 2015), “The Subject of Attention" (Synthese, 2012), and “Inductive Parsimony and the Methodological Argument” (Consciousness & Cognition, 2012).
         </Member>
 
 
-        <Member name={"Michael Rea"} photo={profileImage["rea"]} position={"" } className={"professor"}>
+        <Member name={"Michael Rea"} photo={profileImage["rea"]} position={"" } className={"advisor"}>
             Michael Rea is Rev. John A. O’Brien Professor of Philosophy at the University of Notre Dame, and is Affiliated Faculty in the Notre Dame Gender Studies Program. His research focuses primarily on topics in metaphysics, philosophy of religion, and analytic theology.
         </Member>
 
-        <Member name={"Michael Nekrasov "} photo={profileImage["nekrasov"]} position={""}  className={"professor"}>
-           Michael has a Ph.D from UC Santa Barbara in Computer Science. His work focuses on wireless networks in challenged environments. In this project he provides technical support such as statistical analysis of large data sets, and web development.
+        <br/><br/>
+        <h1>Projects Affiliates</h1>
+        <Member name={"Jevin West"} photo={profileImage["west"]} position={""}  className={"staff"}>
+            Jevin is an Associate Professor in the Information School at the University of Washington. He co-founded the DataLab and direct the Center for an Informed Public. He studies the Science of Science and worries about the spread of misinformation. He develops knowledge discovery tools to both study and facilitate science. In particular, His is interested in the origin of scholarly disciplines and how sociological and economic factors drive and slow the evolution of science.
+        </Member>
+
+        <Member name={"Michael Nekrasov "} photo={profileImage["nekrasov"]} position={""}  className={"staff"}>
+            Michael has a Ph.D from UC Santa Barbara in Computer Science. His work focuses on wireless networks in challenged environments. In this project he provides technical support such as statistical analysis of large data sets, and web development.
+        </Member>
+
+        <Member name={"Irina Artamonova "} photo={profileImage["artamonova"]} position={""}  className={"staff"}>
+            Irina Artamonova is a Statistics currently working at the Division of Global Public Health, University of California, San Diego. Irina does research in Statistics, Public Health and Psychiatry.
         </Member>
 
 
@@ -155,15 +167,15 @@ export default function(){
 
         <br/><br/>
         <h1>Additional Collaborators </h1>
-        <Member name={"Lia Shaked"} photo={profileImage["shaked"]} position={""}  className={"staff"}>
+        <Member name={"Lia Shaked"} photo={profileImage["shaked"]} position={""}  className={"other"}>
             Lia Shaked is a senior double majoring in Studio Art with a concentration in Art and Design and Psychology. She was the web designer for the Global Health Impact, and hopes to find a career in the graphic design field.
         </Member>
 
-        <Member name={"Eric Krebs"} photo={profileImage["krebs"]} position={""}  className={"staff"}>
+        <Member name={"Eric Krebs"} photo={profileImage["krebs"]} position={""}  className={"other"}>
             Eric Krebs is a junior at Xavier High School in Manhattan, NY.
         </Member>
 
-        <Member name={"Jean Krebs"} photo={profileImage["jkrebs"]} position={""}  className={"staff"}>
+        <Member name={"Jean Krebs"} photo={profileImage["jkrebs"]} position={""}  className={"other"}>
             Jean Krebs is a junior at Binghamton University double majoring in Philosophy, Politics and Law and Women, Gender, and Sexuality Studies. In the future, she will be pursuing a law degree and a Master’s in Public Health.
         </Member>
     </Layout>

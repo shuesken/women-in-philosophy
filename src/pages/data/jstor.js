@@ -109,7 +109,7 @@ function selectTypeDecade(type,decade) {
 
 
 export const Summary = {
-    title: "JTOR Authorship Data 1900-2009",
+    title: "JSTOR Authorship Data 1900-2009",
     page: "jstor",
     summary: <>
         <p>This data is from the JSTOR network dataset, with a special focus on philosophy journals. We isolate our
