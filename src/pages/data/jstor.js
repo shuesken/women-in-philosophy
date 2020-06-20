@@ -123,7 +123,10 @@ export const Summary = {
         height={50}
         width={50}
         data={constructDataSet("types")}
-        options={{maintainAspectRatio: true,}}
+        options={{
+            maintainAspectRatio: true,
+            title: { display: true,  text: 'Percent of Women Authorships over Time' }
+        }}
     />
 }
 
