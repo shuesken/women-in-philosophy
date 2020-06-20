@@ -24,6 +24,7 @@
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.x",
     "react-helmet": "^6.x",
+    "react-icons": "^3.x",
     "react-youtube": "^7.x"
   },
   "keywords": [

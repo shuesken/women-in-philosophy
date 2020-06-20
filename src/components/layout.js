@@ -6,6 +6,7 @@ import Metadata from './metadata'
 
 import './bootstrap.min.css'
 import './layout.css'
+import { FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
 
 
 export default (props) => (
@@ -18,6 +19,7 @@ export default (props) => (
           }
         }
       }
+     
       bannerImage: file(relativePath: { eq: "womenbanner.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
@@ -39,11 +41,18 @@ export default (props) => (
                         <Nav.Link href="/resources" className={(props.active==="resources")?"active":""}>Resources  </Nav.Link>
                         <Nav.Link href="/about" className={(props.active==="about")?"active":""}> About Us  </Nav.Link>
                     </Nav>
+
+                    <Nav>
+                        <Nav.Link href="https://www.facebook.com/PhilosophyData/"><FaFacebookSquare color={"#3b5998"}  size={40}/></Nav.Link>
+                        <Nav.Link  href="https://twitter.com/PhilosophyData"><FaTwitterSquare color={"#00acee"} size={40} /> </Nav.Link>
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
 
 
             <div className={'container'}><div id='content' className={props.className}>{props.children}</div></div>
+
+
 
         </>
     )}
