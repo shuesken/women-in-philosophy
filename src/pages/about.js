@@ -2,8 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import Member from '../components/member'
 import {graphql, useStaticQuery} from "gatsby";
-import {forEach} from "react-bootstrap/cjs/ElementChildren";
-
 
 
 var profileImage = {}

@@ -1,5 +1,5 @@
 import Layout from "../../components/layout";
-import React, { useState, setState } from "react";
+import React, { useState } from "react";
 import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
 import {Row, Col, Table} from 'react-bootstrap'
 
@@ -124,7 +124,7 @@ export const Summary = {
         width={50}
         data={constructDataSet("types")}
         options={{
-            maintainAspectRatio: true,
+            maintainAspectRatio: true, legend: {display: false,},
             title: { display: true,  text: 'Percent of Women Authorships over Time' }
         }}
     />

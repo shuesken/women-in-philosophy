@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
-import React, { useState, setState } from "react";
-import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
-import {Row, Col, Table} from 'react-bootstrap'
+import React, { useState, } from "react";
+import {Doughnut, Line, HorizontalBar} from "react-chartjs-2";
+import {Row, Col} from 'react-bootstrap'
 
 
 const data = {
