@@ -6,6 +6,12 @@ import {Row, Col, Table} from 'react-bootstrap'
 
 const data = {
 
+    options: {
+        Top:    { color: "#3182bd", label: "Top-Philosophy" },
+        NonTop: { color: "#9ecae1", label: "Non-Top Philosophy" },
+        Int:    { color: "#deebf7", label: "Interdisciplinary"},
+    },
+
     journals: {
         labels: ['American Philosophical Quarterly', 'Analysis', 'Apeiron', 'Business & Professional Ethics Journal', 'Business Ethics Quarterly', 'Canadian Journal of Philosophy', 'Classical Philology', 'Critical Inquiry', 'Erkenntnis (1975-)', 'Ethical Theory and Moral Practice', 'Ethics', 'Feminist Studies', 'Harvard Law Review', 'Hypatia', 'Inquiry', 'Inter. Journal for Philosophy of Religion', 'Isis', 'Journal of Medical Ethics', 'Journal of Nietzsche Studies', 'Journal of Philosophical Logic', 'Journal of the History of Ideas', 'Law and Philosophy', 'Linguistics and Philosophy', 'Mind', 'Noûs', 'Philosophical Issues', 'Philosophical Perspectives', 'Philosophical Studies', 'Philosophy', 'Philosophy & Public Affairs', 'Philosophy East and West', 'Phil. and Phenomenological Research', 'Philosophy of Science', 'Phronesis', 'Political Theory', 'Polity', 'Proceedings of the Aristotelian Society', 'Public Affairs Quarterly', 'Religious Studies', 'Studia Logica', 'Synthese', 'The British Journal for the Phil. of Sci.', 'The Bulletin of Symbolic Logic', 'The Journal of Aesthetics and Art Crit.', 'The Journal of Ethics', 'The Journal of Philosophy', 'The Journal of Religious Ethics', 'The Journal of Speculative Philosophy', 'The Journal of Symbolic Logic', 'The Monist', 'The Philosophical Quarterly', 'The Philosophical Review', 'The Pluralist', 'The Review of Metaphysics', 'The Review of Politics', 'Trans. of the Charles S. Peirce Society'],
         colors: ["#3182bd", "#3182bd", "#9ecae1", "#deebf7", "#deebf7", "#3182bd", "#deebf7", "#deebf7", "#3182bd", "#9ecae1", "#3182bd", "#deebf7", "#deebf7", "#9ecae1", "#9ecae1", "#9ecae1", "#deebf7", "#deebf7", "#9ecae1", "#3182bd", "#deebf7", "#9ecae1", "#9ecae1", "#3182bd", "#3182bd", "#9ecae1", "#9ecae1", "#3182bd", "#9ecae1", "#3182bd", "#9ecae1", "#3182bd", "#3182bd", "#9ecae1", "#deebf7", "#deebf7", "#3182bd", "#9ecae1", "#9ecae1", "#deebf7", "#3182bd", "#3182bd", "#deebf7", "#9ecae1", "#9ecae1", "#3182bd", "#9ecae1", "#9ecae1", "#deebf7", "#9ecae1", "#3182bd", "#3182bd", "#deebf7", "#9ecae1", "#deebf7", "#9ecae1"],
@@ -27,8 +33,7 @@ const data = {
 
     //Types by Decade
     types: {
-        dec_labels: [1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000],
-
+        labels: [1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000],
 
         colors: {
             Top: ["#bd3131","#3182bd"],
@@ -63,118 +68,30 @@ const data = {
 }
 
 
+function constructDataSet(cat){
+    var chartData = {
+        labels: data[cat].labels,
+        datasets: []
+    };
 
-const longitudinal_data = {
+    ["Top","NonTop","Int"].forEach(function (t) {
+        chartData.datasets.push({
+            label: data.options[t].label,
+            backgroundColor: data.options[t].color,
+            borderColor: data.options[t].color,
+            fill: false,
+            data: data[cat].values[t]
+        });
+    });
 
-    labels: data.types.dec_labels,
-    datasets: [
-        {
-            label:"Top-Philosophy",
-            backgroundColor: "#3182bd",
-            borderColor: "#3182bd",
-            fill: false,
-            data: data.types.values["Top"]
-        },
-        {
-            label:"Non-Top Philosophy",
-            backgroundColor: "#9ecae1",
-            borderColor: "#9ecae1",
-            fill: false,
-            data: data.types.values["NonTop"]
-        },
-        {
-            label:"Interdisciplinary",
-            backgroundColor: "#deebf7",
-            borderColor: "#deebf7",
-            fill: false,
-            data: data.types.values["Int"]
-        }
-    ]
+    return chartData
 }
 
-const aos_data = {
-    labels: data.aos.labels,
-    datasets: [
-        {
-            label:"Top-Philosophy",
-            backgroundColor: "#3182bd",
-            borderColor: "#3182bd",
-            fill: false,
-            data: data.aos.values["Top"]
-        },
-        {
-            label:"Non-Top Philosophy",
-            backgroundColor: "#9ecae1",
-            borderColor: "#9ecae1",
-            fill: false,
-            data: data.aos.values["NonTop"]
-        },
-        {
-            label:"Interdisciplinary",
-            backgroundColor: "#deebf7",
-            borderColor: "#deebf7",
-            fill: false,
-            data: data.aos.values["Int"]
-        }
-    ]
-}
-
-const review_data = {
-    labels: data.review.labels,
-    datasets: [
-        {
-            label:"Top-Philosophy",
-            backgroundColor: "#3182bd",
-            borderColor: "#3182bd",
-            fill: false,
-            data: data.review.values["Top"]
-        },
-        {
-            label:"Non-Top Philosophy",
-            backgroundColor: "#9ecae1",
-            borderColor: "#9ecae1",
-            fill: false,
-            data: data.review.values["NonTop"]
-        },
-        {
-            label:"Interdisciplinary",
-            backgroundColor: "#deebf7",
-            borderColor: "#deebf7",
-            fill: false,
-            data: data.review.values["Int"]
-        }
-    ]
-}
-
-export const Summary = {
-    title: "JTOR Data 1900-2009",
-    page: "jstor",
-    summary: <>
-        <p>This data is from the JSTOR network dataset, with a special focus on philosophy journals. We isolate our
-            analysis to a part of the corpus we call the “network dataset.” This subset includes 1.8 million
-            documents that either cited other JSTOR articles or were cited by other JSTOR articles.</p>
-        <p> We examine the numbers and proportions of women authorships in philosophy journals for historical data
-            collected from the JSTOR network dataset dating between 1900 and 2009. We define “authorships” as
-            author-paper pairs, where multiple authors may co-author the same paper. </p>
-        </>,
-    graph: <Line
-        height={50}
-        width={50}
-        data={longitudinal_data}
-        options={{maintainAspectRatio: true,}}
-    />
-
-}
 
 function selectJournalDecade(decade) {
     return  {
         labels: data.journals.labels,
-        datasets:
-            [{
-                backgroundColor: data.journals.colors,
-                borderColor: '#333',
-                data: data.journals.values[decade]
-            }]
+        datasets: [{ data: data.journals.values[decade], backgroundColor: data.journals.colors,}]
     }
 }
 
@@ -185,30 +102,39 @@ function selectTypeDecade(type,decade) {
 
     return  {
         labels: ['Men', 'Women'],
-        datasets:
-            [{
-                backgroundColor: data.types.colors[type],
-                borderColor: '#333',
-                data: [men,women]
-            }]
+        datasets: [{ data: [men,women], backgroundColor: data.types.colors[type]}]
     }
 }
 
 
 
+export const Summary = {
+    title: "JTOR Authorship Data 1900-2009",
+    page: "jstor",
+    summary: <>
+        <p>This data is from the JSTOR network dataset, with a special focus on philosophy journals. We isolate our
+            analysis to a part of the corpus we call the “network dataset.” This subset includes 1.8 million
+            documents that either cited other JSTOR articles or were cited by other JSTOR articles.</p>
+        <p> We examine the numbers and proportions of women authorships in philosophy journals for historical data
+            collected from the JSTOR network dataset dating between 1900 and 2009. We define “authorships” as
+            author-paper pairs, where multiple authors may co-author the same paper. </p>
+    </>,
+    graph: <Line
+        height={50}
+        width={50}
+        data={constructDataSet("types")}
+        options={{maintainAspectRatio: true,}}
+    />
+}
 
 export default function(props) {
-
-
     const [decade, setDecade] = useState(2000);
     const [journalDecade, setJournalDecade] = useState(selectJournalDecade(2000));
     const [topDecade, setTopDecade] = useState(selectTypeDecade("Top",2000));
     const [nonTopDecade, setNonTopDecade] = useState(selectTypeDecade("NonTop",2000));
     const [intDecade, setIntDecade] = useState(selectTypeDecade("Int",2000));
 
-
-
-
+    constructDataSet("aos")
     function updateYear(e){
         setDecade(e.target.value)
         setJournalDecade(selectJournalDecade(e.target.value))
@@ -272,7 +198,7 @@ export default function(props) {
         <br/>
         <h3>Percent of Women Authorships Over time</h3>
         <Line
-            data={longitudinal_data}
+            data={constructDataSet("types")}
             options={{maintainAspectRatio: true,}}
         />
 
@@ -282,7 +208,7 @@ export default function(props) {
             <Col md={6} sm={12}>
                 <h3>Percent of Women Authorship by Area of Specialization in 2000s</h3>
                 <Bar
-                    data={aos_data}
+                    data={constructDataSet("aos")}
                     width={50}
                     height={30}
                     options={{
@@ -294,7 +220,7 @@ export default function(props) {
             <Col md={6} sm={12}>
                 <h3>Percent of Women Authorship by Review Type in 2000s</h3>
                 <Bar
-                    data={review_data}
+                    data={constructDataSet("review")}
                     width={50}
                     height={30}
                     options={{

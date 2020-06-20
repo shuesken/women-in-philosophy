@@ -623,13 +623,18 @@ pre tt:after {
 }
 
 .container {
-  padding: 30px 100px;
   background-color: #FFF;
   min-height:94vh;
   border-right-style: solid;
   border-left-style: solid;
   border-color: #CCC;
 }
+
+
+@media (min-width:576px){.container{padding: 5px}}
+@media (min-width:768px){.container{padding: 20px}}
+@media (min-width:992px){.container{padding: 20px 50px}}
+@media (min-width:1200px){.container{padding: 30px 100px}}
 
 .banner{
   max-width: 1100px;

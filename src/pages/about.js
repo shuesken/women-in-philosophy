@@ -34,8 +34,9 @@ export default function(){
     return <Layout>
 
 
-        Contact us at <a href="mailto:dataonwomen@gmail.com">dataonwomen@gmail.com</a>
+        <strong>Contact us at:</strong> <a href="mailto:dataonwomen@gmail.com">dataonwomen@gmail.com</a>
 
+        <br/><br/>
         <h1>Professors</h1>
 
         <Member name={"Nicole Hassoun"} photo={profileImage["Hassoun"]} position={"(Executive Director)"} className={"professor"}>
