@@ -19,11 +19,17 @@
 
 .rightControls{
     text-align: right;
+
 }
 
+.rightControls .btn{
+    font-size: .7rem;
+    padding: 0.3rem;
+}
 
 .rightControls button{
     margin-left: 5px;
+
 }
 
 .btn-selected-all{

@@ -1,20 +1,26 @@
 import Layout from "../../components/layout";
 import React, { useState } from "react";
 import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
-import {Row, Col, Table} from 'react-bootstrap'
+import {Row, Col, Table, ButtonGroup, ToggleButton} from 'react-bootstrap'
 
+const c_top ='#3182bd';
+const c_non ='#3182bd';
+const c_int ='#deebf7';
+const c_m_top ='#bd3131';
+const c_m_non ='#e19e9e';
+const c_m_int ='#f7dede';
 
 const data = {
 
     options: {
-        Top:    { color: "#3182bd", label: "Top-Philosophy" },
-        NonTop: { color: "#9ecae1", label: "Non-Top Philosophy" },
-        Int:    { color: "#deebf7", label: "Interdisciplinary"},
+        Top:    { color: c_top, label: "Top-Philosophy" },
+        NonTop: { color: c_non, label: "Non-Top Philosophy" },
+        Int:    { color: c_int, label: "Interdisciplinary"},
     },
 
     journals: {
         labels: ['American Philosophical Quarterly', 'Analysis', 'Apeiron', 'Business & Professional Ethics Journal', 'Business Ethics Quarterly', 'Canadian Journal of Philosophy', 'Classical Philology', 'Critical Inquiry', 'Erkenntnis (1975-)', 'Ethical Theory and Moral Practice', 'Ethics', 'Feminist Studies', 'Harvard Law Review', 'Hypatia', 'Inquiry', 'Inter. Journal for Philosophy of Religion', 'Isis', 'Journal of Medical Ethics', 'Journal of Nietzsche Studies', 'Journal of Philosophical Logic', 'Journal of the History of Ideas', 'Law and Philosophy', 'Linguistics and Philosophy', 'Mind', 'Noûs', 'Philosophical Issues', 'Philosophical Perspectives', 'Philosophical Studies', 'Philosophy', 'Philosophy & Public Affairs', 'Philosophy East and West', 'Phil. and Phenomenological Research', 'Philosophy of Science', 'Phronesis', 'Political Theory', 'Polity', 'Proceedings of the Aristotelian Society', 'Public Affairs Quarterly', 'Religious Studies', 'Studia Logica', 'Synthese', 'The British Journal for the Phil. of Sci.', 'The Bulletin of Symbolic Logic', 'The Journal of Aesthetics and Art Crit.', 'The Journal of Ethics', 'The Journal of Philosophy', 'The Journal of Religious Ethics', 'The Journal of Speculative Philosophy', 'The Journal of Symbolic Logic', 'The Monist', 'The Philosophical Quarterly', 'The Philosophical Review', 'The Pluralist', 'The Review of Metaphysics', 'The Review of Politics', 'Trans. of the Charles S. Peirce Society'],
-        colors: ["#3182bd", "#3182bd", "#9ecae1", "#deebf7", "#deebf7", "#3182bd", "#deebf7", "#deebf7", "#3182bd", "#9ecae1", "#3182bd", "#deebf7", "#deebf7", "#9ecae1", "#9ecae1", "#9ecae1", "#deebf7", "#deebf7", "#9ecae1", "#3182bd", "#deebf7", "#9ecae1", "#9ecae1", "#3182bd", "#3182bd", "#9ecae1", "#9ecae1", "#3182bd", "#9ecae1", "#3182bd", "#9ecae1", "#3182bd", "#3182bd", "#9ecae1", "#deebf7", "#deebf7", "#3182bd", "#9ecae1", "#9ecae1", "#deebf7", "#3182bd", "#3182bd", "#deebf7", "#9ecae1", "#9ecae1", "#3182bd", "#9ecae1", "#9ecae1", "#deebf7", "#9ecae1", "#3182bd", "#3182bd", "#deebf7", "#9ecae1", "#deebf7", "#9ecae1"],
+        colors: [c_top, c_top, c_non, c_int, c_int, c_top, c_int, c_int, c_top, c_non, c_top, c_int, c_int, c_non, c_non, c_non, c_int, c_int, c_non, c_top, c_int, c_non, c_non, c_top, c_top, c_non, c_non, c_top, c_non, c_top, c_non, c_top, c_top, c_non, c_int, c_int, c_top, c_non, c_non, c_int, c_top, c_top, c_int, c_non, c_non, c_top, c_non, c_non, c_int, c_non, c_top, c_top, c_int, c_non, c_int, c_non],
         values: {
             1900: [null, null, null, null, null, null, 0.0, null, null, null, null, null, 0.0, null, null, null, null, null, null, null, null, null, null, 11.9, null, null, null, null, null, null, null, null, null, null, null, null, 0.0, null, null, null, null, null, null, null, null, null, null, null, null, 0.0, null, 10.7, null, null, null, null],
             1910: [null, null, null, null, null, null, 5.8, null, null, null, null, null, 0.8, null, null, null, 5.9, null, null, null, null, null, null, 12.5, null, null, null, null, null, null, null, null, null, null, null, null, 7.7, null, null, null, null, null, null, null, null, null, null, null, null, 0.0, null, 7.8, null, null, null, null],
@@ -36,9 +42,9 @@ const data = {
         labels: [1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000],
 
         colors: {
-            Top: ["#bd3131","#3182bd"],
-            NonTop: ["#e19e9e","#9ecae1"],
-            Int: ["#f7dede","#deebf7"],
+            Top: [c_m_top,c_top],
+            NonTop: [c_m_non,c_non],
+            Int: [c_m_int,c_int],
         },
 
         values: {
@@ -68,6 +74,7 @@ const data = {
 }
 
 
+
 function constructDataSet(cat){
     var chartData = {
         labels: data[cat].labels,
@@ -88,11 +95,27 @@ function constructDataSet(cat){
 }
 
 
-function selectJournalDecade(decade) {
-    return  {
-        labels: data.journals.labels,
-        datasets: [{ data: data.journals.values[decade], backgroundColor: data.journals.colors,}]
+
+function selectJournaData(decade, sorting) {
+    var jointArray = []
+    var i = 0
+    data.journals.labels.forEach( s =>{
+        jointArray.push({'label': s, 'color':data.journals.colors[i], 'value': data.journals.values[decade][i],});
+        i++;
+    })
+
+    const sortedData = {
+        labels: [],
+        datasets: [{data: [],backgroundColor:[]}]
     }
+
+    jointArray.sort((a, b) => (a[sorting] - b[sorting]) ).forEach( s =>{
+        sortedData.labels.push(s.label)
+        sortedData.datasets[0].data.push(s.value)
+        sortedData.datasets[0].backgroundColor.push(s.color)
+    })
+
+    return  sortedData
 }
 
 
@@ -132,19 +155,34 @@ export const Summary = {
 
 export default function(props) {
     const [decade, setDecade] = useState(2000);
-    const [journalDecade, setJournalDecade] = useState(selectJournalDecade(2000));
+    const [sort, setSort] = useState("label");
+    const [journalDecade, setJournalDecade] = useState(selectJournaData(2000, "label"));
     const [topDecade, setTopDecade] = useState(selectTypeDecade("Top",2000));
     const [nonTopDecade, setNonTopDecade] = useState(selectTypeDecade("NonTop",2000));
     const [intDecade, setIntDecade] = useState(selectTypeDecade("Int",2000));
 
-    constructDataSet("aos")
-    function updateYear(e){
-        setDecade(e.target.value)
-        setJournalDecade(selectJournalDecade(e.target.value))
-        setTopDecade(selectTypeDecade("Top",e.target.value))
-        setNonTopDecade(selectTypeDecade("NonTop",e.target.value))
-        setIntDecade(selectTypeDecade("Int",e.target.value))
+
+    function updateSelection(e){
+        var d = decade
+        var s = sort
+
+        if ( e.target.name === "decade") {
+            setDecade(e.target.value)
+
+        }
+        else if ( e.target.name === "sort") {
+            s = e.target.value
+            setSort(e.target.value)
+        }
+
+        setJournalDecade(selectJournaData(d,s))
+        setTopDecade(selectTypeDecade("Top",d))
+        setNonTopDecade(selectTypeDecade("NonTop",d))
+        setIntDecade(selectTypeDecade("Int",d))
     }
+
+
+
 
     return <Layout>
         <h1>{Summary.title}</h1>
@@ -156,6 +194,12 @@ export default function(props) {
         <Row>
             <Col md={6} sm={12}>
                 <h3>Percent of Women Authorships in {decade}s by Journal</h3>
+                <div className="rightControls">
+                    <ButtonGroup toggle>
+                        <ToggleButton key={1}  type="radio" variant="primary" name="sort" value="label" checked={sort === "label" } onChange={updateSelection}>Alphabetical</ToggleButton>
+                        <ToggleButton key={2}  type="radio" variant="primary" name="sort" value="value" checked={sort === "value" } onChange={updateSelection}>Proportion</ToggleButton>
+                    </ButtonGroup>
+                </div>
                 <HorizontalBar
                     data={journalDecade}
                     width={50}
@@ -166,8 +210,6 @@ export default function(props) {
                         scales: {xAxes: [{ticks: {min: 0, max: 100}}]}
                     }}
                 />
-
-
             </Col>
             <Col  md={6}>
 
@@ -194,8 +236,7 @@ export default function(props) {
         </Row>
 
         <strong>Selected Decade:</strong> {decade}s
-        <input className="slider" type="range" id="volume" name="volume"
-               min="1900" max="2000" defaultValue="2000"  step="10" onChange={updateYear}/>
+        <input className="slider" type="range" name="decade" min="1900" max="2000" defaultValue="2000" step="10" onChange={updateSelection}/>
 
         <br/>
         <br/>

@@ -1,15 +1,15 @@
 import Layout from "../../components/layout";
 import React, { useState, setState } from "react";
 import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
-import {Row, Col, Button} from 'react-bootstrap'
+import {Row, Col, Button, ButtonGroup, ToggleButton} from 'react-bootstrap'
 
 import '../../components/datasource.css'
 
 const data = {
     options: {
-        all:    { color: "#3182bd", label: "All" },
-        original: { color: "#9ecae1", label: "Original" },
-        discussion:    { color: "#deebf7", label: "Discussion"},
+        all:        { color: "#3182bd", label: "All" },
+        original:   { color: "#9ecae1", label: "Original" },
+        discussion: { color: "#deebf7", label: "Discussion"},
     },
 
     pie: {
@@ -94,9 +94,9 @@ export default function(props) {
             d = [2004, 2014, 2015][e.target.value]
             setDecade(d)
         }
-        else{
-            t = e.target.name
-            setType(e.target.name)
+        else if ( e.target.name === "type") {
+            t = e.target.value
+            setType(e.target.value)
         }
         setJournalDecade(selectJournalDecade(d,t))
         setTypeDecade(selectTypeDecade(d))
@@ -134,9 +134,11 @@ export default function(props) {
                 <strong>Selected Year:</strong> {decade}
             </Col>
             <Col md={6} sm={12} className={"rightControls"}>
-                <Button variant={(type === "all" ? "selected-all" : "outline-all")} name={"all"}  onClick={updateYear}>All</Button>
-                <Button variant={(type === "original" ? "selected-original" : "outline-original")}  name={"original"}  onClick={updateYear}>Original</Button>
-                <Button variant={(type === "discussion" ? "selected-discussion" : "outline-discussion")} name={"discussion"} onClick={updateYear}>Discussion</Button>
+                <ButtonGroup toggle>
+                    <ToggleButton key={1}  type="radio" variant="primary" name="type" value="all" checked={type === "all" } onChange={updateYear}>All</ToggleButton>
+                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="original" checked={type === "original" } onChange={updateYear}>Original</ToggleButton>
+                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="discussion" checked={type === "discussion" } onChange={updateYear}>Discussion</ToggleButton>
+                </ButtonGroup>
             </Col>
         </Row>
         <input className="slider" type="range" id="decade" name="decade" min="0" max="2" defaultValue={2} onChange={updateYear}/>

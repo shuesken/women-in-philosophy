@@ -10,6 +10,7 @@ export default function() {
     return <Layout>
 
 
+        <DataSource source={FacultySummary} />
         <DataSource source={JstorSummary} />
         <DataSource source={JournalSummary} />
         <DataSource source={SJSummary} />
