@@ -31,39 +31,3 @@
     margin-left: 5px;
 
 }
-
-.btn-selected-all{
-    background-color: #3182bd;
-    color: #FFF;
-}
-
-.btn-selected-original{
-    background-color: #9ecae1;
-    color: #000;
-}
-
-
-.btn-selected-discussion{
-    background-color: #deebf7;
-    color: #000;
-}
-
-
-.btn-outline-all{
-    background-color: #FCFCFC;
-    border-color: #3182bd;
-    color: #3182bd;
-}
-
-.btn-outline-original{
-    background-color: #FCFCFC;
-    border-color: #9ecae1;
-    color: #9ecae1;
-}
-
-
-.btn-outline-discussion{
-    background-color: #FCFCFC;
-    border-color: #deebf7;
-    color: #deebf7;
-}

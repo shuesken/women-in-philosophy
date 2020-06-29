@@ -109,6 +109,12 @@ export default function(props) {
         <Row>
             <Col md={6} sm={12}>
                 <h3>Percent of Women Authorships {decade} by Journal ({data.options[type].label})</h3>
+                <ButtonGroup toggle className={"rightControls"}>
+                    <ToggleButton key={1}  type="radio" variant="primary" name="type" value="all" checked={type === "all" } onChange={updateYear}>All</ToggleButton>
+                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="original" checked={type === "original" } onChange={updateYear}>Original</ToggleButton>
+                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="discussion" checked={type === "discussion" } onChange={updateYear}>Discussion</ToggleButton>
+                </ButtonGroup>
+
                 <HorizontalBar
                     data={journalDecade}
                     width={50}
@@ -129,18 +135,8 @@ export default function(props) {
             </Col>
         </Row>
 
-        <Row>
-            <Col md={6} sm={12}>
-                <strong>Selected Year:</strong> {decade}
-            </Col>
-            <Col md={6} sm={12} className={"rightControls"}>
-                <ButtonGroup toggle>
-                    <ToggleButton key={1}  type="radio" variant="primary" name="type" value="all" checked={type === "all" } onChange={updateYear}>All</ToggleButton>
-                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="original" checked={type === "original" } onChange={updateYear}>Original</ToggleButton>
-                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="discussion" checked={type === "discussion" } onChange={updateYear}>Discussion</ToggleButton>
-                </ButtonGroup>
-            </Col>
-        </Row>
+        <strong>Selected Year:</strong> {decade}
+
         <input className="slider" type="range" id="decade" name="decade" min="0" max="2" defaultValue={2} onChange={updateYear}/>
 
         <br/><br/>
