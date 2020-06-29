@@ -44,7 +44,27 @@ const data = {
     },
 
     tenure: {
+        labels: ["Women","Men"],
+        colors: ["#af31bd","#bd3131"],
+        values: {
+            2004: [303, 1262],
+            2006: [348, 1338],
+            2008: [376, 1335],
+            2010: [375, 1328],
+            2011: [397, 1334]
+        }
+    },
 
+    tenure_2015: {
+        labels:["Full Professor (Women)","Associate Professor (Women)","Assistant Professor (Women)","Full Professor (Men)","Associate Professor (Men)","Assistant Professor (Men)"],
+        colors: ["#af31bd", "rgba(175,49,189,0.65)", "rgba(175,49,189,0.45)","#bd3131", "rgba(189,49,49,0.65)", "rgba(189,49,49,0.45)"],
+        values: [190,131,123,775,305,189] ,
+    },
+
+    non_tenure_2015: {
+        labels:["Lecturer (Women)","Adjunct Professor (Women)","Lecturer (Men)","Adjunct Professor (Men)"],
+        colors: ["#af31bd", "rgba(175,49,189,0.65)","#bd3131", "rgba(189,49,49,0.65)"],
+        values: [35,31,120,117] ,
     },
 }
 
@@ -52,7 +72,6 @@ const data = {
 
 
 function selectFacultyData(decade, sorting) {
-
     var jointArray = []
     var i = 0
     data.schools.labels.forEach( s =>{
@@ -60,12 +79,10 @@ function selectFacultyData(decade, sorting) {
         i++;
     })
 
-
     const sortedData = {
         labels: [],
         datasets: [{data: [],backgroundColor:[]}]
     }
-
 
     jointArray.sort((a, b) => (a[sorting] - b[sorting]) ).forEach( s =>{
         sortedData.labels.push(s.label)
@@ -73,9 +90,29 @@ function selectFacultyData(decade, sorting) {
         sortedData.datasets[0].backgroundColor.push(s.color)
     })
 
-
     return  sortedData
 }
+
+const dataset_2015 = {
+
+    tenure: {
+        labels: data.tenure_2015.labels,
+        datasets: [{data: data.tenure_2015.values, backgroundColor: data.tenure_2015.colors,}]
+    },
+    nontenure:{
+        labels: data.non_tenure_2015.labels,
+        datasets: [{data: data.non_tenure_2015.values, backgroundColor: data.non_tenure_2015.colors,}]
+    }
+}
+
+function selectTypeYear(y) {
+
+    if(y < 2015) return {
+        labels: data.tenure.labels,
+        datasets: [{data: data.tenure.values[y], backgroundColor: data.tenure.colors,}]
+    }
+}
+
 
 export const Summary = {
     title: "Faculty Data (2004 - 2015)",
@@ -83,32 +120,45 @@ export const Summary = {
     summary: <>
         This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslanger in 2009.
         </>,
-    graph: <></>
+    graph: <Doughnut
+        data={dataset_2015.tenure}   height={50}
+        width={50}
+        options={{
+            maintainAspectRatio: true, legend: {display: false,},
+            title: { display: true,  text: 'Tenure Faculty - 2015' }
+        }}
+    />
 
 }
 
 
 export default function(props) {
-
     const [year, setYear] = useState(2015);
     const [sort, setSort] = useState('label');
     const [facultyYear, setFacultyYear] = useState(selectFacultyData(2015, 'label'));
+    const [tenureYear, setTenureYear] = useState();
 
     function updateSelection(e){
-        var d = year
+        var y = year
         var s = sort
 
         if ( e.target.name === "year") {
-            d = [2004, 2006, 2008, 2010, 2011, 2015][e.target.value]
-            setYear(d)
+            y = [2004, 2006, 2008, 2010, 2011, 2015][e.target.value]
+            setTenureYear(selectTypeYear(y))
+
+
+            setYear(y)
         }
         else if ( e.target.name === "sort") {
             s = e.target.value
             setSort(e.target.value)
         }
 
-        setFacultyYear(selectFacultyData(d, s))
+        setFacultyYear(selectFacultyData(y, s))
+
     }
+
+
 
     return <Layout>
         <h1>{Summary.title}</h1>
@@ -137,6 +187,26 @@ export default function(props) {
                         scales: {xAxes: [{ticks: {min: 0, max: 60}}]}
                     }}
                 />
+            </Col>
+            <Col  md={6} sm={12}>
+                <h3>Number of Tenure Track Faculty in {year}</h3>
+                {(year === 2015) && <Doughnut
+                    data={dataset_2015.tenure}
+                    options={{maintainAspectRatio: true,}}
+                />}
+                {(year < 2015) && <Doughnut
+                    data={tenureYear}
+                    options={{maintainAspectRatio: true,}}
+                />}
+
+                <br/><br/>
+                <h3>Number of Non Tenure Track Faculty in {year}</h3>
+                {(year === 2015) && <Doughnut
+                    data={dataset_2015.nontenure}
+                    options={{maintainAspectRatio: true,}}
+                />}
+
+                {(year < 2015) && <h3> No Data</h3>}
             </Col>
         </Row>
 
