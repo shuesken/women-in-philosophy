@@ -8,7 +8,6 @@
     display: block;
 }
 .data-source a{
-
     color: #000;
 }
 .data-source h2{
@@ -17,17 +16,36 @@
     width: 100%;
 }
 
-.rightControls{
-    text-align: right;
 
-}
-
-.rightControls .btn{
+.controls .btn{
     font-size: .7rem;
     padding: 0.3rem;
 }
 
-.rightControls button{
+.controls button{
     margin-left: 5px;
 
+}
+
+.chart-legend{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.chart-legend .item {
+    display: inline-block;
+    margin: 2px;
+}
+.chart-legend .color{
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+}
+
+.chart-legend .label{
+    height: 15px;
+    font-size: small;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
 }

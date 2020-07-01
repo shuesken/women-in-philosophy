@@ -1,7 +1,9 @@
 import Layout from "../../components/layout";
-import React, { useState, setState } from "react";
-import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
-import {Row, Col, ButtonGroup, ToggleButton, Button} from 'react-bootstrap'
+import Doughnut from "../../components/doughnut-wrapper"
+import Legend from "../../components/legend"
+import React, { useState } from "react";
+import {Line,  HorizontalBar} from "react-chartjs-2";
+import {Row, Col, ButtonGroup, ToggleButton} from 'react-bootstrap'
 
 const c_top = "#8331bd"
 const c_not = "#c09ee1"
@@ -11,6 +13,11 @@ const c_unr = "#e8def7"
 const data = {
 
     schools:{
+        legend: {
+            labels: ["PGR Top 20", "Non-Top", "Unranked"  ],
+            colors: [c_top,c_not,c_unr]
+        },
+
         labels: ['Arizona State University', 'Baylor University', 'Binghamton University', 'Boston College', 'Boston University', 'Bowling Green State University', 'Brown University', 'Carnegie-Mellon University', 'Catholic University of America', 'City University of New York Graduate Center', 'Columbia University (incl. Barnard)', 'Cornell University', 'DePaul University', 'Duke University', 'Duquesne University', 'Emory University', 'Florida State University', 'Fordham University', 'Georgetown University', 'Harvard University', 'Indiana University, Bloomington', 'Johns Hopkins University', 'Loyola University-Chicago', 'Marquette University*', 'Massachusetts Institute of Technology', 'Michigan State University', 'New School University', 'New York University', 'Northwestern University', 'Ohio State University', 'Pennsylvania State University', 'Princeton University', 'Purdue University', 'Rice University', 'Rutgers University', 'SUNY Albany', 'SUNY Buffalo', 'SUNY Stony Brook', 'Saint Louis University', 'Southern Illinois University at Carbondale', 'Stanford University', 'Syracuse University', 'Temple University', 'Texas A&M University', 'Tulane University', 'UC Santa Cruz', 'University of Arizona', 'University of Arkansas', 'University of California, Berkeley', 'University of California, Davis', 'University of California, Irvine', 'University of California, Los Angeles', 'University of California, Riverside', 'University of California, San Diego', 'University of California, Santa Barbara', 'University of Chicago', 'University of Cincinnati', 'University of Colorado, Boulder', 'University of Connecticut', 'University of Dallas', 'University of Florida', 'University of Georgia', 'University of Hawaii-Manoa', 'University of Illinois, Champaign-Urbana', 'University of Illinois, Chicago', 'University of Iowa', 'University of Kansas', 'University of Kentucky', 'University of Maryland, College Park', 'University of Massachusetts, Amherst', 'University of Memphis', 'University of Miami', 'University of Michigan', 'University of Minnesota, Twin Cities', 'University of Missouri, Columbia', 'University of Nebraska', 'University of New Mexico', 'University of North Carolina, Chapel Hill', 'University of Notre Dame', 'University of Oklahoma', 'University of Oregon', 'University of Pennsylvania', 'University of Pittsburgh', 'University of Rochester', 'University of South Carolina', 'University of South Florida', 'University of Southern California', 'University of Tennessee-Knoxville', 'University of Texas, Austin', 'University of Utah', 'University of Virginia', 'University of Washington', 'University of Wisconsin, Madison', 'Vanderbilt University', 'Villanova University', 'Washington University, St. Louis', 'Wayne State University', 'Yale University'],
 
         colors:{
@@ -52,16 +59,27 @@ const data = {
             2008: [376, 1335],
             2010: [375, 1328],
             2011: [397, 1334]
+        },
+        totalPercent: {
+            2004: 24,
+            2006: 26,
+            2008: 28,
+            2010: 28,
+            2011: 30
         }
+
+
     },
 
     tenure_2015: {
+        totalPercent: 35,
         labels:["Full Professor (Women)","Associate Professor (Women)","Assistant Professor (Women)","Full Professor (Men)","Associate Professor (Men)","Assistant Professor (Men)"],
         colors: ["#af31bd", "rgba(175,49,189,0.65)", "rgba(175,49,189,0.45)","#bd3131", "rgba(189,49,49,0.65)", "rgba(189,49,49,0.45)"],
         values: [190,131,123,775,305,189] ,
     },
 
     non_tenure_2015: {
+        totalPercent: 28,
         labels:["Lecturer (Women)","Adjunct Professor (Women)","Lecturer (Men)","Adjunct Professor (Men)"],
         colors: ["#af31bd", "rgba(175,49,189,0.65)","#bd3131", "rgba(189,49,49,0.65)"],
         values: [35,31,120,117] ,
@@ -69,6 +87,15 @@ const data = {
 }
 
 
+
+const timeseries = {
+    labels: ["2004","2006","2008","2010","2011","2015"],
+    datasets: [
+        {   label: "PGR Top 20",  data: [17.8,17.9,19.8,20.8,20.6,22.1], backgroundColor: c_top, borderColor: c_top, fill: false},
+        {   label: "PGR Non-Top",  data: [19.0,19.6,21.6,20.6,23.8,25.6], backgroundColor: c_not, borderColor: c_not, fill: false},
+        {   label: "Unranked",  data: [20.8,23.2,23.6,23.9,24.0,28.6], backgroundColor: c_unr, borderColor: c_unr, fill: false},
+    ]
+}
 
 
 function selectFacultyData(decade, sorting) {
@@ -96,10 +123,12 @@ function selectFacultyData(decade, sorting) {
 const dataset_2015 = {
 
     tenure: {
+        text: data.tenure_2015.totalPercent+"%",
         labels: data.tenure_2015.labels,
         datasets: [{data: data.tenure_2015.values, backgroundColor: data.tenure_2015.colors,}]
     },
     nontenure:{
+        text: data.non_tenure_2015.totalPercent+"%",
         labels: data.non_tenure_2015.labels,
         datasets: [{data: data.non_tenure_2015.values, backgroundColor: data.non_tenure_2015.colors,}]
     }
@@ -108,6 +137,7 @@ const dataset_2015 = {
 function selectTypeYear(y) {
 
     if(y < 2015) return {
+        text: data.tenure.totalPercent[y]+"%",
         labels: data.tenure.labels,
         datasets: [{data: data.tenure.values[y], backgroundColor: data.tenure.colors,}]
     }
@@ -145,8 +175,6 @@ export default function(props) {
         if ( e.target.name === "year") {
             y = [2004, 2006, 2008, 2010, 2011, 2015][e.target.value]
             setTenureYear(selectTypeYear(y))
-
-
             setYear(y)
         }
         else if ( e.target.name === "sort") {
@@ -167,9 +195,9 @@ export default function(props) {
 
         <Row>
             <Col md={6} sm={12}>
-                <h3>Percent of Women Faculty in {year} by School</h3>
-
-                <div className="rightControls">
+                <h3>Percent of Tenure Track Women Faculty in {year}</h3>
+                <Legend data={data.schools.legend} />
+                <div className="controls"  style={{textAlign: "right"}}>
                     <ButtonGroup toggle>
                         <ToggleButton key={1}  type="radio" variant="primary" name="sort" value="label" checked={sort === "label" } onChange={updateSelection}>Alphabetical</ToggleButton>
                         <ToggleButton key={2}  type="radio" variant="primary" name="sort" value="rank" checked={sort === "rank" } onChange={updateSelection}>PGR Rank</ToggleButton>
@@ -189,24 +217,33 @@ export default function(props) {
                 />
             </Col>
             <Col  md={6} sm={12}>
-                <h3>Number of Tenure Track Faculty in {year}</h3>
+                <h3>Tenure Track Faculty in {year}</h3>
+                <div  style={{"maxWidth": "60%", "margin":"auto"}}>
                 {(year === 2015) && <Doughnut
                     data={dataset_2015.tenure}
                     options={{maintainAspectRatio: true,}}
                 />}
+
                 {(year < 2015) && <Doughnut
                     data={tenureYear}
                     options={{maintainAspectRatio: true,}}
                 />}
+                </div>
+                {(year < 2015) && <Legend data={data.tenure} />}
+                {(year === 2015) && <Legend data={data.tenure_2015} />}
 
                 <br/><br/>
-                <h3>Number of Non Tenure Track Faculty in {year}</h3>
+                <h3>Non Tenure Track Faculty in {year}</h3>
+                <div  style={{"maxWidth": "60%", "margin":"auto"}}>
                 {(year === 2015) && <Doughnut
                     data={dataset_2015.nontenure}
                     options={{maintainAspectRatio: true,}}
                 />}
 
-                {(year < 2015) && <h3> No Data</h3>}
+                </div>
+                {(year === 2015) && <Legend data={data.non_tenure_2015} />}
+
+                {(year < 2015) && <h3 style={{color:"#666", textAlign:"center", marginTop:"50px"}}> No Data</h3>}
             </Col>
         </Row>
 
@@ -214,7 +251,17 @@ export default function(props) {
         <strong>Selected Year:</strong> {year}
         <input className="slider" type="range" id="decade" name="year" min="0" max="5" defaultValue={5} onChange={updateSelection}/>
 
+        <br/>
+        <br/>
+        <h3>Percent of Tenure Track Women Faculty Over time</h3>
+        <Line
+            data={timeseries}
+            options={{maintainAspectRatio: true,}}
+        />
 
+
+        <br/>
+        <br/>
         <h2>Methods</h2>
         <p>Each of the schools (for Hassoun, 2015 data) was triple checked and checked at least one time by a graduate student. If there are discrepancies, we believe they may reflect faculty additions and subtractions since the time of our survey. Regretfully, not every change can be kept up with since the time of the survey. Regardless, the numbers here provided an accurate picture of the gender divisions within the field of philosophy. Please note some of the particulars of our data collection below.</p>
 

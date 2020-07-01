@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link } from "gatsby"
 import './datasource.css'
-import { Doughnut } from 'react-chartjs-2';
 import {Row, Col} from 'react-bootstrap'
 
 

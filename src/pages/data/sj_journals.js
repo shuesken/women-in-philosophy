@@ -1,6 +1,8 @@
 import Layout from "../../components/layout";
+import Doughnut from "../../components/doughnut-wrapper"
+import Legend from "../../components/legend"
 import React, { useState, } from "react";
-import {Doughnut, Line, HorizontalBar} from "react-chartjs-2";
+import { Line, HorizontalBar} from "react-chartjs-2";
 import {Row, Col} from 'react-bootstrap'
 
 
@@ -13,6 +15,13 @@ const data = {
 
     number:{
         labels: ['Ethics', 'Journal of Philosophy', 'Mind', 'Philosophical Review', 'Philosophy & Public Affairs', "Total Men"],
+        totalPercent: {
+            '1954-1955': 5 ,
+            '1974-1975': 10 ,
+            '1994-1995': 12 ,
+            '2013-2015': 11 ,
+        },
+
         values: {
             '1954-1955': [1,12,2,2,null,343] ,
             '1974-1975': [13,11,11,1,3,353] ,
@@ -77,7 +86,13 @@ function selectJournalDecade(decade) {
 
 function selectPropDecade(decade) {
     return  {
+        legend:{
+            labels: data.number.labels,
+            colors: data.options.journal_colors
+        },
+        text: data.number.totalPercent[decade]+"%",
         labels: data.number.labels,
+
         datasets: [{ data: data.number.values[decade], backgroundColor: data.options.journal_colors,}]
     }
 }
@@ -96,8 +111,7 @@ export const Summary = {
             options={{
                 maintainAspectRatio: true,
                 legend: {display: false,},
-                scales: {xAxes: [{ticks: {min: 0, max: 20}}]},
-                title: { display: true,  text: 'Percent of Women Authorships 2013-2015' }
+                scales: {xAxes: [{ticks: {min: 0, max: 20}}]}
             }}
         />
     </>
@@ -124,7 +138,7 @@ export default function(props) {
         <p>In December 2014, Schwitzgebel and Jennings examined the names of all authors publishing articles, commentaries, or responses (but not book reviews, editorial remarks, or retrospectives), in four time periods: 1954/1955, 1974/1975, 1994/1995, and 2014/2015. (However, since not all 2015 issues of Philosophical Review and Journal of Philosophy had been released at the time of data collection, they went back into late 2013 for these two journals to have a full two-year sample.)</p>
         <Row>
             <Col md={6} sm={12}>
-                <h3>Percent of Women Authorships {decade} by Journal</h3>
+                <h3>Percent of Women Authorships {decade}</h3>
                 <HorizontalBar
                     data={journalDecade}
                     width={50}
@@ -138,11 +152,12 @@ export default function(props) {
             </Col>
             <Col  md={6}>
 
-                <h3>Number of Women Authorships vs. Men by Journal {decade}</h3>
-                <Doughnut
-                    data={proportionDecade}
-                    options={{maintainAspectRatio: true,}}
-                />
+                <h3>Ratio of Women Authorships {decade}</h3>
+
+                <div  style={{"maxWidth": "50%", "margin":"auto"}}>
+                    <Doughnut  data={proportionDecade}/>
+                </div>
+                <Legend data={proportionDecade.legend} />
             </Col>
         </Row>
         <strong>Selected Years:</strong> {decade}

@@ -1,6 +1,8 @@
 import Layout from "../../components/layout";
+import Doughnut from "../../components/doughnut-wrapper"
+import Legend from "../../components/legend"
 import React, { useState } from "react";
-import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
+import { Line, Bar, HorizontalBar} from "react-chartjs-2";
 import {Row, Col, Table, ButtonGroup, ToggleButton} from 'react-bootstrap'
 
 const c_top ='#3182bd';
@@ -12,11 +14,18 @@ const c_m_int ='#f7dede';
 
 const data = {
 
+    legend: {
+        labels: ["Top-Philosophy", "Non-Top Philosophy", "Interdisciplinary"  ],
+        colors: [c_top,c_non,c_int]
+    },
+
     options: {
         Top:    { color: c_top, label: "Top-Philosophy" },
         NonTop: { color: c_non, label: "Non-Top Philosophy" },
         Int:    { color: c_int, label: "Interdisciplinary"},
     },
+
+
 
     journals: {
         labels: ['American Philosophical Quarterly', 'Analysis', 'Apeiron', 'Business & Professional Ethics Journal', 'Business Ethics Quarterly', 'Canadian Journal of Philosophy', 'Classical Philology', 'Critical Inquiry', 'Erkenntnis (1975-)', 'Ethical Theory and Moral Practice', 'Ethics', 'Feminist Studies', 'Harvard Law Review', 'Hypatia', 'Inquiry', 'Inter. Journal for Philosophy of Religion', 'Isis', 'Journal of Medical Ethics', 'Journal of Nietzsche Studies', 'Journal of Philosophical Logic', 'Journal of the History of Ideas', 'Law and Philosophy', 'Linguistics and Philosophy', 'Mind', 'Noûs', 'Philosophical Issues', 'Philosophical Perspectives', 'Philosophical Studies', 'Philosophy', 'Philosophy & Public Affairs', 'Philosophy East and West', 'Phil. and Phenomenological Research', 'Philosophy of Science', 'Phronesis', 'Political Theory', 'Polity', 'Proceedings of the Aristotelian Society', 'Public Affairs Quarterly', 'Religious Studies', 'Studia Logica', 'Synthese', 'The British Journal for the Phil. of Sci.', 'The Bulletin of Symbolic Logic', 'The Journal of Aesthetics and Art Crit.', 'The Journal of Ethics', 'The Journal of Philosophy', 'The Journal of Religious Ethics', 'The Journal of Speculative Philosophy', 'The Journal of Symbolic Logic', 'The Monist', 'The Philosophical Quarterly', 'The Philosophical Review', 'The Pluralist', 'The Review of Metaphysics', 'The Review of Politics', 'Trans. of the Charles S. Peirce Society'],
@@ -125,6 +134,7 @@ function selectTypeDecade(type,decade) {
 
     return  {
         labels: ['Men', 'Women'],
+        text: Math.round(women)+"%",
         datasets: [{ data: [men,women], backgroundColor: data.types.colors[type]}]
     }
 }
@@ -142,15 +152,14 @@ export const Summary = {
             collected from the JSTOR network dataset dating between 1900 and 2009. We define “authorships” as
             author-paper pairs, where multiple authors may co-author the same paper. </p>
     </>,
-    graph: <Line
+    graph: <><br/><Line
         height={50}
         width={50}
         data={constructDataSet("types")}
         options={{
-            maintainAspectRatio: true, legend: {display: false,},
-            title: { display: true,  text: 'Percent of Women Authorships over Time' }
+            maintainAspectRatio: true, legend: {display: false,}
         }}
-    />
+    /></>
 }
 
 export default function(props) {
@@ -192,9 +201,12 @@ export default function(props) {
 
 
         <Row>
+            <Col sm={12}><Legend data={data.legend} /></Col>
+        </Row>
+        <Row>
             <Col md={6} sm={12}>
                 <h3>Percent of Women Authorships in {decade}s by Journal</h3>
-                <div className="rightControls">
+                <div className="controls"  style={{textAlign: "right"}}>
                     <ButtonGroup toggle>
                         <ToggleButton key={1}  type="radio" variant="primary" name="sort" value="label" checked={sort === "label" } onChange={updateSelection}>Alphabetical</ToggleButton>
                         <ToggleButton key={2}  type="radio" variant="primary" name="sort" value="value" checked={sort === "value" } onChange={updateSelection}>Proportion</ToggleButton>
@@ -214,24 +226,31 @@ export default function(props) {
             <Col  md={6}>
 
                 <h3>Gender of Authorships in Top-Philosophy Journals in the {decade}s</h3>
-                <Doughnut
-                    data={topDecade}
-                    options={{maintainAspectRatio: true,}}
-                />
+                <div  style={{"maxWidth": "50%", "margin":"auto"}}>
+                    <Doughnut
+                        data={topDecade}
+                        options={{maintainAspectRatio: true,}}
+                    />
+                </div>
 
                 <br/>
                 <h3>Gender of Authorships in Non-Top Philosophy Journals in the {decade}s</h3>
-                <Doughnut
-                    data={nonTopDecade}
-                    options={{maintainAspectRatio: true,}}
-                />
+                <div  style={{"maxWidth": "50%", "margin":"auto"}}>
+                    <Doughnut
+                        data={nonTopDecade}
+                        options={{maintainAspectRatio: true,}}
+                    />
+                </div>
 
                 <br/>
                 <h3>Gender of Authorships in Interdisciplinary Journals in the {decade}s</h3>
-                <Doughnut
-                    data={intDecade}
-                    options={{maintainAspectRatio: true,}}
-                />
+
+                <div  style={{"maxWidth": "50%", "margin":"auto"}}>
+                    <Doughnut
+                        data={intDecade}
+                        options={{maintainAspectRatio: true,}}
+                    />
+                </div>
             </Col>
         </Row>
 

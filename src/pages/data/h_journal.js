@@ -1,7 +1,9 @@
 import Layout from "../../components/layout";
-import React, { useState, setState } from "react";
-import {Doughnut, Line, Bar, HorizontalBar} from "react-chartjs-2";
-import {Row, Col, Button, ButtonGroup, ToggleButton} from 'react-bootstrap'
+import Doughnut from "../../components/doughnut-wrapper"
+import Legend from "../../components/legend"
+import React, { useState } from "react";
+import {HorizontalBar} from "react-chartjs-2";
+import {Row, Col, ButtonGroup, ToggleButton} from 'react-bootstrap'
 
 import '../../components/datasource.css'
 
@@ -19,7 +21,13 @@ const data = {
             2004:[107,41,577,298],
             2014:[179,88,1013,361],
             2015:[158,97,873,432]
+        },
+        totalPercent: {
+            2004: 14,
+            2014: 16,
+            2015: 16
         }
+
     },
     journals: {
         labels: ['American Philosophical Quarterly', 'Analysis', 'Australasian Journal of Philosophy', 'British Journal for the History of Philosophy', 'British Journal for the Philosophy of Science', 'Canadian Journal of Philosophy', 'Erkenntnis', 'Ethics', 'European Journal of Philosophy', 'Journal of Philosophical Logic', 'Journal of Philosophy', 'Journal of the History of Philosophy', 'Mind', 'Mind & Language', 'Nous', 'Pacific Philosophical Quarterly', 'Philosophers Imprint', 'Philosophical Quarterly', 'Philosophical Review', 'Philosophical Studies', 'Philosophy & Phenomenological Research', 'Philosophy & Public Affairs', 'Philosophy of Science', 'Proceedings of the Aristotelian Society', 'Synthese'],
@@ -47,16 +55,36 @@ const data = {
 
 }
 
-function selectJournalDecade(decade, type) {
-    return  {
-        labels: data.journals.labels,
-        datasets: [{ data: data.journals.values[type][decade], backgroundColor: data.options[type].color,}]
+function selectJournalDecade(decade, type, sorting) {
+
+    var jointArray = []
+    var i = 0
+    data.journals.labels.forEach( s =>{
+        jointArray.push({'label': s, 'value': data.journals.values[type][decade][i]});
+        i++;
+    })
+
+    const sortedData = {
+        labels: [],
+        datasets: [{data: [],backgroundColor: data.options[type].color}]
     }
+
+    jointArray.sort((a, b) => (a[sorting] - b[sorting]) ).forEach( s =>{
+        sortedData.labels.push(s.label)
+        sortedData.datasets[0].data.push(s.value)
+    })
+
+    return  sortedData
 }
 
 
 function selectTypeDecade(decade) {
     return  {
+        legend:{
+            labels: data.pie.labels,
+            colors: data.pie.colors
+        },
+        text: data.pie.totalPercent[decade]+"%",
         labels: data.pie.labels,
         datasets: [{ data: data.pie.values[decade], backgroundColor: data.pie.colors,}]
     }
@@ -68,15 +96,7 @@ export const Summary = {
     summary: <>
         Data on the representation of women who publish in 25 top philosophy journals as ranked by the Philosophical Gourmet Report (2015) for the years 2004, 2014, and 2015.
     </>,
-    graph: <>
-        <Doughnut
-            data={selectTypeDecade(2015)}
-            width={50}
-            height={50}
-            options={{maintainAspectRatio: true, legend: {display: false,},
-                title: { display: true,  text: 'Authorships in Top Journals - 2015' }}}
-        />
-        </>
+    graph: <Doughnut data={selectTypeDecade(2015)}/>
 
 }
 
@@ -84,12 +104,15 @@ export const Summary = {
 export default function(props) {
     const [decade, setDecade] = useState(2015);
     const [type, setType] = useState("all");
-    const [journalDecade, setJournalDecade] = useState(selectJournalDecade(2015, "all"));
+    const [sort, setSort] = useState('label');
+    const [journalDecade, setJournalDecade] = useState(selectJournalDecade(2015, "all", "label"));
     const [typeDecade, setTypeDecade] = useState(selectTypeDecade(2015));
 
-    function updateYear(e){
+    function updateSelection(e){
         var d = decade
         var t = type
+        var s = sort
+
         if ( e.target.name === "decade") {
             d = [2004, 2014, 2015][e.target.value]
             setDecade(d)
@@ -98,9 +121,16 @@ export default function(props) {
             t = e.target.value
             setType(e.target.value)
         }
-        setJournalDecade(selectJournalDecade(d,t))
+        else if ( e.target.name === "sort") {
+            s = e.target.value
+            setSort(e.target.value)
+        }
+
+        setJournalDecade(selectJournalDecade(d,t,s))
         setTypeDecade(selectTypeDecade(d))
     }
+
+
 
     return <Layout>
         <h1>{Summary.title}</h1>
@@ -108,12 +138,23 @@ export default function(props) {
 
         <Row>
             <Col md={6} sm={12}>
-                <h3>Percent of Women Authorships {decade} by Journal ({data.options[type].label})</h3>
-                <ButtonGroup toggle className={"rightControls"}>
-                    <ToggleButton key={1}  type="radio" variant="primary" name="type" value="all" checked={type === "all" } onChange={updateYear}>All</ToggleButton>
-                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="original" checked={type === "original" } onChange={updateYear}>Original</ToggleButton>
-                    <ToggleButton key={2}  type="radio" variant="primary" name="type" value="discussion" checked={type === "discussion" } onChange={updateYear}>Discussion</ToggleButton>
-                </ButtonGroup>
+                <h3>Percent of Women Authorships {decade} <br/> by Journal ({data.options[type].label})</h3>
+
+                <Row>
+                    <Col sm={6}  className="controls">
+                        <ButtonGroup toggle >
+                            <ToggleButton key={1}  type="radio" variant="secondary" name="type" value="all" checked={type === "all" } onChange={updateSelection}>All</ToggleButton>
+                            <ToggleButton key={2}  type="radio" variant="secondary" name="type" value="original" checked={type === "original" } onChange={updateSelection}>Original</ToggleButton>
+                            <ToggleButton key={3}  type="radio" variant="secondary" name="type" value="discussion" checked={type === "discussion" } onChange={updateSelection}>Discussion</ToggleButton>
+                        </ButtonGroup>
+                    </Col>
+                    <Col sm={6}  className="controls"  style={{textAlign: "right"}}>
+                        <ButtonGroup toggle>
+                            <ToggleButton key={1}  type="radio" variant="primary" name="sort" value="label" checked={sort === "label" } onChange={updateSelection}>Alphabetical</ToggleButton>
+                            <ToggleButton key={2}  type="radio" variant="primary" name="sort" value="value" checked={sort === "value" } onChange={updateSelection}>Proportion</ToggleButton>
+                        </ButtonGroup>
+                    </Col>
+                </Row>
 
                 <HorizontalBar
                     data={journalDecade}
@@ -127,17 +168,21 @@ export default function(props) {
                 />
             </Col>
             <Col  md={6}>
-                <h3>Number of Authorships in in {decade}</h3>
-                <Doughnut
-                    data={typeDecade}
-                    options={{maintainAspectRatio: true,}}
-                />
+                <h3>Ratio of Authorships in {decade}</h3>
+
+                <div  style={{"maxWidth": "60%", "margin":"auto"}}>
+                    <Doughnut
+                        data={typeDecade}
+                        options={{maintainAspectRatio: true,}}
+                    />
+                </div>
+                <Legend data={typeDecade.legend} />
             </Col>
         </Row>
 
         <strong>Selected Year:</strong> {decade}
+        <input className="slider" type="range" id="decade" name="decade" min="0" max="2" defaultValue={2} onChange={updateSelection}/>
 
-        <input className="slider" type="range" id="decade" name="decade" min="0" max="2" defaultValue={2} onChange={updateYear}/>
 
         <br/><br/>
 
