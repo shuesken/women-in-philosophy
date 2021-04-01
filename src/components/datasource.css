@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+.description{
+    font-size: 80%;
+}
+
 
 .controls .btn{
     font-size: .7rem;

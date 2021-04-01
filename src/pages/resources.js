@@ -1,8 +1,22 @@
 import React from 'react'
 import Layout from '../components/layout'
+import YouTube from "react-youtube";
+
+const opts = {
+    height: '390',
+    width: '640',
+    playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 0,
+    },
+};
 
 const IndexPage = () => (
     <Layout>
+
+
+        <div className="video"> <YouTube videoId="-8vP2nrdEfk" opts={opts}  /> </div>
+
         <h1>Other Data on Women in Philosophy</h1>
 
         <h3>Graduate Programs &amp; PhDs:</h3>

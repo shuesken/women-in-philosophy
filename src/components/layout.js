@@ -35,24 +35,27 @@ export default (props) => (
                 <Navbar.Brand href="/"><Img className="logo"  fixed={data.logoImage.childImageSharp.fixed}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                    <Nav className="mr-auto" >
+                    <Nav >
                         <Nav.Link href="/" className={(props.active==="home")?"active":""}>Home</Nav.Link>
                         <Nav.Link href="/data" className={(props.active==="explore")?"active":""}>Explore Data </Nav.Link>
                         <Nav.Link href="/resources" className={(props.active==="resources")?"active":""}>Resources  </Nav.Link>
                         <Nav.Link href="/about" className={(props.active==="about")?"active":""}> About Us  </Nav.Link>
-                    </Nav>
-
-                    <Nav>
-                        <Nav.Link href="https://www.facebook.com/PhilosophyData/"><FaFacebookSquare color={"#3b5998"}  size={40}/></Nav.Link>
-                        <Nav.Link  href="https://twitter.com/PhilosophyData"><FaTwitterSquare color={"#00acee"} size={40} /> </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
 
 
             <div className={'container'}><div id='content' className={props.className}>{props.children}</div></div>
+            <Navbar  className="navbar-dark footer" expand="sm" >
 
-
+                  <Nav>
+                        <Nav.Link href="https://www.facebook.com/PhilosophyData/"><FaFacebookSquare color={"#ffffff"}  size={25}/></Nav.Link>
+                        <Nav.Link  href="https://twitter.com/PhilosophyData"><FaTwitterSquare color={"#ffffff"} size={25} /> </Nav.Link>
+                    </Nav>
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                    <Navbar.Brand href="https://www.global-health-impact.org/" className="ghi-footer" >Affiliate of Global Health Impact</Navbar.Brand>
+                </Navbar.Collapse>
+            </Navbar>
 
         </>
     )}

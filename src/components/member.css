@@ -1,6 +1,7 @@
 .member{
     display: inline-flex;
     align-content: baseline;
+    color: rgb(0,131,196);
 }
 .member .photo{
     position: relative;
@@ -8,10 +9,8 @@
     width: 125px;
     height: 125px;
     margin-bottom: -75px;
-    border: 6px solid #eeeeee;
-
-    box-shadow: 2px 0px 1px 0px rgba(0,0,0,0.05);
-    border-radius: 40px !important;
+    border: 2px solid #eeeeee;
+    border-radius: 0px !important;
 }
 
 
@@ -23,14 +22,6 @@
 
     text-align: center;
 
-    border-top: #eee solid 5px;
-    border-bottom: #eee solid 2px;
-    border-left: #eee solid 2px;
-    border-right: #eee solid 2px;
-
-    -webkit-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.04);
-    -moz-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.04);
-    box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.04);
 }
 
 .member .pi{
@@ -61,6 +52,8 @@
 
 .member .about{
     font-size: small;
+    color: #000;
+    text-align: left;
 }
 
 

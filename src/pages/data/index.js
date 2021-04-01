@@ -8,8 +8,6 @@ import {Summary as SJSummary} from './sj_journals'
 
 export default function() {
     return <Layout>
-
-
         <DataSource source={FacultySummary} />
         <DataSource source={JstorSummary} />
         <DataSource source={JournalSummary} />
