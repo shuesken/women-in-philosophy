@@ -6,6 +6,7 @@ import {HorizontalBar} from "react-chartjs-2";
 import {Row, Col, ButtonGroup, ToggleButton} from 'react-bootstrap'
 
 import '../../components/datasource.css'
+import _ from "lodash";
 
 const data = {
     options: {
@@ -57,6 +58,7 @@ const data = {
 
 function selectJournalDecade(decade, type, sorting) {
 
+
     var jointArray = []
     var i = 0
     data.journals.labels.forEach( s =>{
@@ -79,14 +81,16 @@ function selectJournalDecade(decade, type, sorting) {
 
 
 function selectTypeDecade(decade) {
+
+    const d = _.cloneDeep(data);
     return  {
         legend:{
-            labels: data.pie.labels,
-            colors: data.pie.colors
+            labels: d.pie.labels,
+            colors: d.pie.colors
         },
-        text: data.pie.totalPercent[decade]+"%",
-        labels: data.pie.labels,
-        datasets: [{ data: data.pie.values[decade], backgroundColor: data.pie.colors,}]
+        text: d.pie.totalPercent[decade]+"%",
+        labels: d.pie.labels,
+        datasets: [{ data: d.pie.values[decade], backgroundColor: d.pie.colors,}]
     }
 }
 

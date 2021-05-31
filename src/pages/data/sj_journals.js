@@ -4,6 +4,7 @@ import Legend from "../../components/legend"
 import React, { useState, } from "react";
 import { Line, HorizontalBar} from "react-chartjs-2";
 import {Row, Col} from 'react-bootstrap'
+import _ from "lodash";
 
 
 const data = {
@@ -78,22 +79,24 @@ function constructDataSet(){
 }
 
 function selectJournalDecade(decade) {
+    const d = _.cloneDeep(data);
     return  {
-        labels: data.journals.labels,
-        datasets: [{ data: data.journals.values[decade], backgroundColor: data.options.journal_colors,}]
+        labels: d.journals.labels,
+        datasets: [{ data: d.journals.values[decade], backgroundColor: d.options.journal_colors,}]
     }
 }
 
 function selectPropDecade(decade) {
+    const d = _.cloneDeep(data);
     return  {
         legend:{
-            labels: data.number.labels,
-            colors: data.options.journal_colors
+            labels: d.number.labels,
+            colors: d.options.journal_colors
         },
-        text: data.number.totalPercent[decade]+"%",
-        labels: data.number.labels,
+        text: d.number.totalPercent[decade]+"%",
+        labels: d.number.labels,
 
-        datasets: [{ data: data.number.values[decade], backgroundColor: data.options.journal_colors,}]
+        datasets: [{ data: d.number.values[decade], backgroundColor: d.options.journal_colors,}]
     }
 }
 

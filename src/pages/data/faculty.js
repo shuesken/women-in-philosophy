@@ -9,7 +9,6 @@ import _ from "lodash";
 const c_top = "#8331bd"
 const c_not = "#c09ee1"
 const c_unr = "#e8def7"
-const c_unk = "#000000"
 
 
 
@@ -143,7 +142,6 @@ function selectFacultyData(decade, sorting, reverse) {
         sortedData[bin].datasets[0].backgroundColor.push(s.color);
     })
 
-    console.log(jointArray,sortedData)
     return sortedData
 }
 
@@ -156,7 +154,7 @@ function selectTypeYear(y, type) {
         labels: (y < 2015)? ["Women","Men"] : data[type].labels,
         colors: (y < 2015)? ["#af31bd","#bd3131"] : data[type].colors,
         datasets: [{
-            data: data[type].values[y],
+            data: _.cloneDeep(data[type].values[y]),
             backgroundColor: (y<2015) ? ["#af31bd","#bd3131"] : data[type].colors,
         }]
     }
@@ -170,9 +168,13 @@ export const Summary = {
     summary: <>
         This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslanger in 2009.
         <br/><br/>
-        <p><strong>NEW:</strong><br/>Now includes <a href={"https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IJZW8Y"} > 2019 Dataset</a> collected by
-            <a href={"https://www.sdstate.edu/directory/gregory-peterson"}> Dr. Greg Paterson. </a>
-        </p>
+
+        <ul>
+            <li>2004 - 2015 Data by Julie Van Camp </li>
+            <li>2009 Data by Sally Haslanger </li>
+            <li>2015 Enriched Data by Conklin, S., Artamonova, I., & Hassoun, N </li>
+            <li><strong>NEW: </strong> 2019 Dataset by Peterson, Greg; Hustoft, Zayna</li>
+        </ul>
 
         </>,
     graph: <Doughnut
@@ -201,10 +203,11 @@ export default function(props) {
 
 
         if ( e.target.name === "year") {
-            y = [2004, 2006, 2008, 2010, 2011, 2015, 2019][e.target.value]
-            setTenureYear(selectTypeYear(y, "tenure"))
-            setNonTenureYear(selectTypeYear(y, "nonTenure"))
-            setYear(y)
+            y = [2004, 2006, 2008, 2010, 2011, 2015, 2019][e.target.value];
+            setYear(y);
+            setTenureYear(selectTypeYear(y, "tenure"));
+            setNonTenureYear(selectTypeYear(y, "nonTenure"));
+
         }
         else if ( e.target.name === "sort") {
             s = e.target.value
@@ -310,6 +313,11 @@ export default function(props) {
         <br/>
         <br/>
         <h2>Methods</h2>
+
+
+        <h3>2004 - 2015 Data by Julie Van Camp </h3>
+        <h3>2009 Data by Sally Haslanger </h3>
+        <h3>2015 Enriched Data by Conklin, S., Artamonova, I., & Hassoun, N </h3>
         <p>Each of the schools (for Hassoun, 2015 data) was triple checked and checked at least one time by a graduate student. If there are discrepancies, we believe they may reflect faculty additions and subtractions since the time of our survey. Regretfully, not every change can be kept up with since the time of the survey. Regardless, the numbers here provided an accurate picture of the gender divisions within the field of philosophy. Please note some of the particulars of our data collection below.</p>
 
         <p>Some outlier faculty positions were research faculty and teaching faculty. The department was contacted directly to confirm how to categorize things. Sometimes research faculty were assistant, associate, or full professor, sometimes not. Some non tenure-track research professors were in a special case put under lecturer to reflect their non-tenure track status. Some teaching faculty were placed under lecturer, some under assistant, associate, or full professor. Another issue came down to titles like part-time lecturer. These were confirmed to be either a regular lecturer position that is more stable than an adjunct position, or simply an adjunct position that is more contingent.</p>

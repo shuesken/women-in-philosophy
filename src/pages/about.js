@@ -119,6 +119,12 @@ export default function(){
         </Member>
 
 
+
+
+
+        <br/><br/>
+        <h1>Current Affiliates</h1>
+
         <Member name={"Jevin West"} photo={profileImage["west"]} position={""}  className={"staff"}>
             Jevin is an Associate Professor in the Information School at the University of Washington. He co-founded the DataLab and direct the Center for an Informed Public. He studies the Science of Science and worries about the spread of misinformation. He develops knowledge discovery tools to both study and facilitate science. In particular, His is interested in the origin of scholarly disciplines and how sociological and economic factors drive and slow the evolution of science.
         </Member>
@@ -131,11 +137,17 @@ export default function(){
             Irina Artamonova is a Statistics currently working at the Division of Global Public Health, University of California, San Diego. Irina does research in Statistics, Public Health and Psychiatry.
         </Member>
 
+        <Member name={"Katrina England"} photo={profileImage["england"]} position={""}  className={"student"}>
+            Katrina England is a PhD Candidate in the Social Political Ethical and Legal (SPEL) philosophy program at Binghamton University.
+        </Member>
 
 
-        <br/><br/>
-        <h1>Collaborators</h1>
+        <Member name={"Zayna Hustoft"} photo={profileImage["hustoft"]} position={""}  className={"other"}>
+            Zyna Hustoft is an undergraduate Psychology major at South Dakota State University. She works at the  Ethics Lab, her research is focused on facial trustworthiness and self-perceptions of leadership.
+        </Member>
 
+
+        <h1>Former Affiliates</h1>
         <Member name={"Jenn Dum"} photo={profileImage["dum"]} position={""}  className={"student"}>
             Jenn Dum is a Ph.D. Student in Philosophy at Binghamton University, SUNY. Her research interests are in Social and Political Philosophy, Applied Ethics, and Philosophy of Education.
         </Member>
@@ -172,9 +184,6 @@ export default function(){
             Gabrielle recently graduated summa cum laude from the University of California, Santa Barbara with a BA in Philosophy and has plans to pursue a PhD. She is interested in normative theory, applied ethics, and logic.
         </Member>
 
-        <Member name={"Katrina England"} photo={profileImage["england"]} position={""}  className={"student"}>
-            Katrina England is a PhD Candidate in the Social Political Ethical and Legal (SPEL) philosophy program at Binghamton University.
-        </Member>
 
 
         <Member name={"Lia Shaked"} photo={profileImage["shaked"]} position={""}  className={"other"}>
@@ -189,8 +198,6 @@ export default function(){
             Jean Krebs is a junior at Binghamton University double majoring in Philosophy, Politics and Law and Women, Gender, and Sexuality Studies. In the future, she will be pursuing a law degree and a Master’s in Public Health.
         </Member>
 
-        <Member name={"Zayna Hustoft"} photo={profileImage["hustoft"]} position={""}  className={"other"}>
-        Zyna Hustoft is an undergraduate Psychology major at South Dakota State University. She works at the  Ethics Lab, her research is focused on facial trustworthiness and self-perceptions of leadership.
-        </Member>
+
     </Layout>
 }

@@ -2,21 +2,21 @@ import React from 'react';
 import {Chart, Doughnut} from 'react-chartjs-2';
 
 
-var originalDoughnutDraw = Chart.controllers.doughnut.prototype.draw;
+const originalDoughnutDraw = Chart.controllers.doughnut.prototype.draw;
 Chart.helpers.extend(Chart.controllers.doughnut.prototype, {
     draw: function() {
         originalDoughnutDraw.apply(this, arguments);
 
-        var chart = this.chart.chart;
-        var ctx = chart.ctx;
-        var width = chart.width;
-        var height = chart.height;
+        const chart = this.chart.chart;
+        const ctx = chart.ctx;
+        const width = chart.width;
+        const height = chart.height;
 
-        var fontSize = (height / 114).toFixed(2);
+        const fontSize = (height / 114).toFixed(2);
         ctx.font = fontSize + "em Verdana";
         ctx.textBaseline = "middle";
 
-        var text = chart.config.data.text?chart.config.data.text:"",
+        const text = chart.config.data.text?chart.config.data.text:"",
             textX = Math.round((width - ctx.measureText(text).width) / 2),
             textY = height / 2;
 
@@ -26,9 +26,9 @@ Chart.helpers.extend(Chart.controllers.doughnut.prototype, {
 
 
 
-export default function(props) {
+export default function({data}) {
     return <div className={"doughnut-chart"}>
-        <Doughnut data={props.data} options={{maintainAspectRatio: true, legend: {display: false,},}} width={50} height={50}/>
+        <Doughnut data={data} options={{maintainAspectRatio: true, legend: {display: false,},}} width={50} height={50}/>
     </div>
 }
 

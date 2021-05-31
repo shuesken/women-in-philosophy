@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Micheal Nekrasov <mikrasov@gmail.com>",
   "dependencies": {
-    "chart.js": "^2.x",
+    "chart.js": "^2.9.3",
     "gatsby": "^2.23.x",
     "gatsby-image": "^2.4.x",
     "gatsby-plugin-catch-links": "^2.3.x",
@@ -22,7 +22,7 @@
     "lodash": "^4.17.21",
     "react": "^16.13.x",
     "react-bootstrap": "^1.0.1",
-    "react-chartjs-2": "^2.9.0",
+    "react-chartjs-2": "^2.11.1",
     "react-dom": "^16.13.x",
     "react-helmet": "^6.x",
     "react-icons": "^3.x",
