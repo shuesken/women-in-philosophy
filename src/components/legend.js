@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function(props) {
+export default function({data}) {
 
     var items = []
     var i = 0
-    props.data && props.data.labels.forEach( s =>{
-        items.push({'label': s, 'color': props.data.colors[i]});
+    data?.labels && data.labels.forEach( s =>{
+        items.push({'label': s, 'color': data.colors[i]});
         i++;
     })
 

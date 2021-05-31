@@ -1,1 +1,1 @@
-ReadMe of Mikrasov Design
+Designed by Michael Nekrasov. 2020.

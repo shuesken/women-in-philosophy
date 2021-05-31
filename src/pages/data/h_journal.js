@@ -91,7 +91,7 @@ function selectTypeDecade(decade) {
 }
 
 export const Summary = {
-    title: "Hassoun - Journals 2004, 2014, 2015 ",
+    title: "Journals Data: 2004, 2014, 2015 ",
     page: "h_journal",
     summary: <>
         Data on the representation of women who publish in 25 top philosophy journals as ranked by the Philosophical Gourmet Report (2015) for the years 2004, 2014, and 2015.

@@ -19,6 +19,7 @@
     "gatsby-plugin-sitemap": "^2.x",
     "gatsby-source-filesystem": "^2.3.x",
     "gatsby-transformer-sharp": "^2.5.x",
+    "lodash": "^4.17.21",
     "react": "^16.13.x",
     "react-bootstrap": "^1.0.1",
     "react-chartjs-2": "^2.9.0",
@@ -33,9 +34,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop"
   },
   "devDependencies": {
     "eslint": "^7.x",

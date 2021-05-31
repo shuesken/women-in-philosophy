@@ -35,7 +35,7 @@ export default function(){
         <strong>Contact us at:</strong> <a href="mailto:dataonwomen@gmail.com">dataonwomen@gmail.com</a>
 
         <br/><br/>
-        <h1>Advisory Board</h1>
+        <h1>Directors</h1>
 
         <Member name={"Nicole Hassoun"} photo={profileImage["Hassoun"]} position={"(Executive Director)"} className={"pi"}>
             Nicole Hassoun is an associate professor in philosophy at Binghamton University. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations (Cambridge University Press, 2012) was runner up for the APA book prize and her articles appear in journals like the American Philosophical Quarterly, Journal of Development Economics, The Australasian Journal of Philosophy, PLOS ONE, The European Journal of Philosophy, and Utilitas.
@@ -50,10 +50,12 @@ export default function(){
         </Member>
 
 
+
+
+        <h1>Advisory Board</h1>
         <Member name={"Sally Haslanger"} photo={profileImage["haslanger"]} position={"" } className={"advisor"}>
             Sally Haslanger is Ford Professor of Philosophy and Women's and Gender Studies at the Massachusetts Institute of Technology. She specializes in metaphysics, epistemology, feminist theory, and critical race theory. Her book Resisting Reality: Social Construction and Social Critique (Oxford 2012) won the Joseph B. Gittler award for work in philosophy of the social sciences. She was elected to the American Academy of Arts and Sciences in 2015.
         </Member>
-
 
         <Member name={"Tom Dougherty"} photo={profileImage["dougherty"]} position={"" } className={"advisor"}>
             Tom Dougherty is a University Lecturer in the Philosophy Faculty at the University of Cambridge and a Fellow of Trinity Hall. His research focuses on moral and political philosophy.
@@ -132,7 +134,7 @@ export default function(){
 
 
         <br/><br/>
-        <h1>Graduate Students</h1>
+        <h1>Collaborators</h1>
 
         <Member name={"Jenn Dum"} photo={profileImage["dum"]} position={""}  className={"student"}>
             Jenn Dum is a Ph.D. Student in Philosophy at Binghamton University, SUNY. Her research interests are in Social and Political Philosophy, Applied Ethics, and Philosophy of Education.
@@ -174,9 +176,6 @@ export default function(){
             Katrina England is a PhD Candidate in the Social Political Ethical and Legal (SPEL) philosophy program at Binghamton University.
         </Member>
 
-
-        <br/><br/>
-        <h1>Additional Collaborators </h1>
 
         <Member name={"Lia Shaked"} photo={profileImage["shaked"]} position={""}  className={"other"}>
             Lia Shaked is a senior double majoring in Studio Art with a concentration in Art and Design and Psychology. She was the web designer for the Global Health Impact, and hopes to find a career in the graphic design field.
