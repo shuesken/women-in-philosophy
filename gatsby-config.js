@@ -1,55 +1,53 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://mikrasov.com',
+  URL: NETLIFY_SITE_URL = "https://mikrasov.com",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
-  CONTEXT: NETLIFY_ENV = NODE_ENV
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
-const isNetlifyProduction = NETLIFY_ENV === 'production';
+const isNetlifyProduction = NETLIFY_ENV === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
-
-
 
 module.exports = {
   siteMetadata: {
-    title: 'Women in Philosophy',
-    twitterUsername: 'PhilosophyData',
-    siteUrl
+    title: "Women in Philosophy",
+    twitterUsername: "PhilosophyData",
+    siteUrl,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     `gatsby-plugin-react-svg`,
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'Women in Philosophy',
-        short_name: 'WIP		',
-        start_url: '/',
-        background_color: '#0277bd',
-        theme_color: '#0277bd',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+        name: "Women in Philosophy",
+        short_name: "WIP		",
+        start_url: "/",
+        background_color: "#0277bd",
+        theme_color: "#0277bd",
+        display: "minimal-ui",
+        icon: "src/images/favicon.png", // This path is relative to the root of the site.
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
             policy: [],
           },
-          'branch-deploy': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
             sitemap: null,
-            host: null
+            host: null,
           },
-          'deploy-preview': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
             sitemap: null,
-            host: null
-          }
-        }
-      }
+            host: null,
+          },
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -63,7 +61,6 @@ module.exports = {
       },
     },
 
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -72,10 +69,9 @@ module.exports = {
       },
     },
 
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-catch-links',
-    `gatsby-plugin-netlify`, //KEEP LAST!
+    "gatsby-plugin-catch-links",
+    `gatsby-plugin-netlify`, // KEEP LAST!
   ],
-}
+};

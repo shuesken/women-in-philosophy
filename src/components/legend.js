@@ -1,25 +1,23 @@
-import React from 'react';
+import React from "react";
+import _ from "lodash";
 
-export default function({data}) {
+export default function Legend({ data }) {
+  const items = [];
+  let i = 0;
+  if (data?.labels)
+    data.labels.forEach((s) => {
+      items.push({ label: s, color: data.colors[i] });
+      i += 1;
+    });
 
-    var items = []
-    var i = 0
-    data?.labels && data.labels.forEach( s =>{
-        items.push({'label': s, 'color': data.colors[i]});
-        i++;
-    })
-
-
-    return <div className={"chart-legend"} >
-        {items.map(function(d, idx){
-            return  <div key={idx} className={"item"}>
-                <div  className={"color"}  style={{"backgroundColor": d.color}} />
-                <div  className={"label"}>{d.label}</div>
-            </div>
-        })}
+  return (
+    <div className="chart-legend">
+      {items.map((d) => (
+        <div key={_.uniqueId()} className="item">
+          <div className="color" style={{ backgroundColor: d.color }} />
+          <div className="label">{d.label}</div>
+        </div>
+      ))}
     </div>
+  );
 }
-
-
-
-
