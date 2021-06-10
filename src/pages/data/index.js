@@ -12,7 +12,6 @@ export default function Data() {
       <DataSource source={FacultySummary} />
       <DataSource source={JstorSummary} />
       <DataSource source={JournalSummary} />
-      <DataSource source={SJSummary} />
     </Layout>
   );
 }

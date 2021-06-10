@@ -107,23 +107,6 @@ const IndexPage = () => (
             .
           </p>
 
-          <p>
-            <strong>NEW:</strong>
-            <br />
-            Now includes{" "}
-            <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IJZW8Y">
-              {" "}
-              2019 Dataset
-            </a>{" "}
-            collected by
-            <a href="https://www.sdstate.edu/directory/gregory-peterson">
-              {" "}
-              Dr. Greg Paterson.{" "}
-            </a>
-            <br />
-            DOI:
-            <a href="https://doi.org/10.7910/DVN/IJZW8Y"> 10.7910/DVN/IJZW8Y</a>
-          </p>
 
           <div className="video">
             {" "}
