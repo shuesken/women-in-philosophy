@@ -156,7 +156,6 @@ export default function(props) {
     }
 
 
-
     return <Layout>
         <h1>{Summary.title}</h1>
         <p>Data on the representation of women who publish in select top philosophy journals. In all years and for all journals, the percentage of female authors was extremely low. The percentage of women authors is less than the percentage of women faculty in different ranks and at different kinds of institutions. In addition, there is great variation across individual journals, and the discrepancy between women authors and women faculty appears to be different in different subfields. Interestingly, journals which do not practice anonymous review seem to have a higher percentage of women authors than journals which practice double anonymous or triple anonymous review. This paper also argues that we need more data on academic publishing to better understand whether this can explain why there are so few full-time female faculty in philosophy, since full-time hiring and tenuring practices presumably depend on a candidate’s academic publishing.</p>
