@@ -41,13 +41,7 @@ export default function About() {
         position="(Executive Director)"
         className="pi"
       >
-        Nicole Hassoun is an associate professor in philosophy at Binghamton
-        University. Her book Globalization and Global Justice: Shrinking
-        Distance, Expanding Obligations (Cambridge University Press, 2012) was
-        runner up for the APA book prize and her articles appear in journals
-        like the American Philosophical Quarterly, Journal of Development
-        Economics, The Australasian Journal of Philosophy, PLOS ONE, The
-        European Journal of Philosophy, and Utilitas.
+        Nicole Hassoun is a professor in philosophy at Binghamton University. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations (Cambridge University Press, 2012) was runner up for the APA book prize and her articles appear in journals like the American Philosophical Quarterly, Journal of Development Economics, The Australasian Journal of Philosophy, PLOS ONE, The European Journal of Philosophy, and Utilitas.
       </Member>
       <Member
         name="Eric Schwitzgebel"
@@ -55,13 +49,7 @@ export default function About() {
         position="(Co-Director)"
         className="pi"
       >
-        Eric Schwitzgebel is a professor of philosophy at University of
-        California, Riverside. Recent works include: Perplexities of
-        Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine,
-        2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the
-        APA Committee on the Status and Future of the Profession. On his blog,
-        and more recently in op-eds for The Los Angeles Times, he regularly
-        critiques the narrowness and homogeneity of academic philosophy in the
+        Eric Schwitzgebel is a Professor of Philosophy at the University of California, Riverside. Recent works include: A Theory of Jerks, and Other Philosophical Misadventures (MIT Press, 2019), Perplexities of Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine, 2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the APA Committee on the Status and Future of the Profession. On his blog, and more recently in op-eds for The Los Angeles Times, he regularly critiques the narrowness and homogeneity of academic philosophy in the mainstream Anglophone tradition. homogeneity of academic philosophy in the
         mainstream Anglophone tradition.
       </Member>
       <Member
@@ -70,9 +58,7 @@ export default function About() {
         position="(Co-Director)"
         className="pi"
       >
-        As a PhD student in the Department of Philosophy at UCSB, Sherri
-        conducts research in moral worth, normative theory, and moral
-        psychology.
+        Sherri Conklin- Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
       </Member>
       <h1>Advisory Board</h1>
       <Member
@@ -81,13 +67,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Sally Haslanger is Ford Professor of Philosophy and Women&apos;s and
-        Gender Studies at the Massachusetts Institute of Technology. She
-        specializes in metaphysics, epistemology, feminist theory, and critical
-        race theory. Her book Resisting Reality: Social Construction and Social
-        Critique (Oxford 2012) won the Joseph B. Gittler award for work in
-        philosophy of the social sciences. She was elected to the American
-        Academy of Arts and Sciences in 2015.
+        Sally Haslanger is a Ford professor of Philosophy and Women's and Gender Studies at the Massachusetts Institute of Technology. She specializes in metaphysics, epistemology, feminist theory, and critical race theory. Her book Resisting Reality: Social Construction and Social Critique (Oxford 2012) won the Joseph B. Gittler award for work in philosophy of the social sciences. She was elected to the American Academy of Arts and Sciences in 2015.
       </Member>
       <Member
         name="Tom Dougherty"
@@ -95,9 +75,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Tom Dougherty is a University Lecturer in the Philosophy Faculty at the
-        University of Cambridge and a Fellow of Trinity Hall. His research
-        focuses on moral and political philosophy.
+        Tom Dougherty- Tom Dougherty is an associate Professor in philosophy at the University of North Carolina at Chapel Hill. Formerly, he worked as a University Lecturer in the Philosophy Faculty at the University of Cambridge and a Fellow of Trinity Hall. His research focuses on moral and political philosophy, as well as consequentialism, and he is currently writing books on the ethics of consent. 
       </Member>
       <Member
         name="Kathryn Norlock"
@@ -105,12 +83,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Kathryn J. Norlock is the Kenneth Mark Drain Chair in Ethics and
-        Associate Professor of Philosophy at Trent University in Peterborough,
-        Ontario, Canada. She is the President of the Society for Analytical
-        Feminism (SAF), and past president of the Canadian Society for Women In
-        Philosophy (CSWIP). She is a co-founder and co-editor of Feminist
-        Philosophy Quarterly, an open-access, peer-reviewed journal.
+        Kathryn Norlock is the inaugural Kenneth Mark Drain Endowed Chair in Ethics, the Chair of the Department of Philosophy at Trent University in Peterborough, Ontario, Canada. She is also an affiliated faculty member in Sustainability Studies, and an associated faculty member in Gender and Women's Studies at Trent University. She is the former President of the Society for Analytical Feminism (SAF), and past president of the Canadian Society for Women In Philosophy (CSWIP). She is a co-founder and co-editor of Feminist Philosophy Quarterly, an open-access, peer-reviewed journal.
       </Member>
       <Member
         name="Edouard Machery"
@@ -118,14 +91,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Edouard Machery is Professor in the Department of History and Philosophy
-        of Science at the University of Pittsburgh, the incoming Director of the
-        Center for Philosophy of Science at the University of Pittsburgh . His
-        research focuses on the philosophical issues raised by psychology and
-        cognitive neuroscience. He was awarded the Chancellor’s Distinguished
-        Research Award by the University of Pittsburgh, the Stanton Prize by the
-        Society for Philosophy and Psychology, and holds a Regular Visiting
-        Distinguished Professorship at Eidyn (Edinburgh).
+        Edouard Machery is a Distinguished Professor of philosophy at the University of Pittsburgh, as well as the Director of History and Philosophy of Science at the University of Pittsburgh. His research focuses on the philosophical issues raised by psychology and cognitive neuroscience. He was awarded the Chancellor’s Distinguished Research Award by the University of Pittsburgh, the Stanton Prize by the Society for Philosophy and Psychology, and holds a Regular Visiting Distinguished Professorship at Eidyn (Edinburgh).
       </Member>
       <Member
         name="Carolyn Jennings"
@@ -133,16 +99,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Carolyn Jennings is an assistant professor of philosophy at University
-        of California, Merced. Recent works include: “Action without Attention”
-        (with B. Nanay, Analysis, forthcoming), “The Standard Theory of
-        Conscious Perception” (Proceedings of the 37th Annual Conference of the
-        Cognitive Science Society, 2015), “Consciousness without Attention”
-        (Journal of the American Philosophical Association, 2015),
-        &apos;Attention and Perceptual Organization&apos; (Philosophical
-        Studies, 2015), &apos;The Subject of Attention&apos; (Synthese, 2012),
-        and “Inductive Parsimony and the Methodological Argument” (Consciousness
-        & Cognition, 2012).
+        Carolyn Jennings is an Associate Professor of Philosophy and Cognitive Sciences at University of California Merced. Her work is centered around attention. She recently published her debut book, The Attending Mind, with Cambridge University Press in 2020. Some of her notable work includes: “Action without Attention” (with B. Nanay, Analysis, forthcoming), “The Standard Theory of Conscious Perception” (Proceedings of the 37th Annual Conference of the Cognitive Science Society, 2015), “Consciousness without Attention” (Journal of the American Philosophical Association, 2015), 'Attention and Perceptual Organization' (Philosophical Studies, 2015), 'The Subject of Attention' (Synthese, 2012), and “Inductive Parsimony and the Methodological Argument” (Consciousness & Cognition, 2012).
       </Member>
       <Member
         name="Michael Rea"
@@ -150,10 +107,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Michael Rea is Rev. John A. O’Brien Professor of Philosophy at the
-        University of Notre Dame, and is Affiliated Faculty in the Notre Dame
-        Gender Studies Program. His research focuses primarily on topics in
-        metaphysics, philosophy of religion, and analytic theology.
+        Michael Rea is a Rev. John A. O’Brien Professor of Philosophy at the University of Notre Dame, and is Concurrent Faculty in the Notre Dame Gender Studies Program. He is the Director for the Center for Philosophy of Religion at Notre Dame. His research focuses primarily on topics in metaphysics, philosophy of religion, and analytic theology.
       </Member>
       <Member
         name="Julie Van Camp"
@@ -161,14 +115,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Julie C. Van Camp is Professor Emerita of Philosophy at California State
-        University, Long Beach, where she taught philosophy of art, philosophy
-        of law, and applied ethics. She is currently Executive Director &
-        Secretary-Treasurer of the American Society for Aesthetics. She was
-        privileged to study with Elizabeth Lane Beardsley at Temple University
-        and inspired to encourage women to pursue philosophy by a former male
-        colleague who told her long ago that &apos;female philosopher is an
-        oxymoron.&apos;
+        Julie C. Vancamp is a Professor Emerita of Philosophy at California State University, Long Beach, where she teaches philosophy of law and applied ethics. She is currently Executive Director & Secretary-Treasurer of the American Society for Aesthetics. She was privileged to study with Elizabeth Lane Beardsley at Temple University and inspired to encourage women to pursue philosophy by a former male colleague who told her long ago that 'female philosopher is an oxymoron.'
       </Member>
       <Member
         name="Ruth Chang"
@@ -176,15 +123,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Ruth Chang is a philosopher at Rutgers University, New Brunswick. Before
-        arriving at Rutgers, she was a Junior Research Fellow at Balliol
-        College, Oxford where she was completing her dissertation. She has also
-        held visiting positions in the philosophy department at the University
-        of California, Los Angeles and the University of Chicago Law School.
-        Before her life as a philosopher, she worked as a law associate on a
-        (pro bono) death penalty case and several (non pro bono) product
-        liability cases. She has a J.D. from Harvard Law School and an A.B. from
-        Dartmouth College.
+        Ruth Chang is a Professor and the Chair of Jurisprudence at the University of Oxford, a Professorial Fellow of University College, Oxford, and an American professor of philosophy. Formerly, she worked as a Professor of Philosophy at Rutgers University, New Brunswick. Before arriving at Rutgers, she was a Junior Research Fellow at Balliol College, Oxford where she was completing her dissertation. She has also held visiting positions in the philosophy department at the University of California, Los Angeles and the University of Chicago Law School. Before her life as a philosopher, she worked as a law associate on a (pro bono) death penalty case and several (non pro bono) product liability cases. She has a J.D. from Harvard Law School and an A.B. from Dartmouth College. Some of her current academic interests include population ethics, the nature of normativity, commitment, and the self.
       </Member>
       <Member
         name="Kenneth Clatterbaugh"
@@ -192,9 +131,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Kenneth C. Clatterbaugh is an American philosopher. He is Chair of the
-        department of Philosophy at the University of Washington. His interests
-        are modern philosophy, social philosophy, and gender studies.
+        Kenneth C. Clatterbaugh is an American philosopher. He was Chair of the department of Philosophy at the University of Washington for fifteen years. He retired in 2012. His interests are modern philosophy, social philosophy, and gender studies.
       </Member>
       <Member
         name="Charles Mills"
@@ -202,9 +139,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Charles W. Mills is John Evans Professor of Moral and Intellectual
-        Philosophy at Northwestern University. He works in the general area of
-        oppositional political philosophy, with a special focus on race.
+        Charles W. Mills is a Distinguished Professor of Philosophy at the Graduate Center CUNY. Formerly, he taught at the University of Oklahoma, the University of Illinois at Chicago, and Northwestern University. He was also the President of the American Philosophical Association Central Division. His research interests include social and political philosophy, Africana philosophy, critical philosophy of race, and ethics. 
       </Member>
       <Member
         name="Meena Krishnamurthy"
@@ -212,10 +147,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Meena Krishnamurthy is an Assistant Professor in the Department of
-        Philosophy and in the Program in Philosophy, Politics, and Economics at
-        the University of Michigan. She works in social and political
-        philosophy, mostly in the area of normative democratic theory.
+        Meena Krishnamurthy is an Assistant Professor in the Department of Philosophy at Queen’s University. Previously she was an Assistant Professor in the Department of Philosophy and in the Program in Philosophy, Politics, and Economics at the University of Michigan. She is a political philosopher who works mostly in the area of normative democratic theory.
       </Member>
       <Member
         name="Amia Srinivasan"
@@ -223,9 +155,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Amia Srinivasan is a lecturer (assistant professor) at University
-        College London. She works on topics in epistemology, ethics,
-        metaphilosophy, social and political philosophy, and feminism.
+        Amia Srinivasan is the Chichele Professor of Social and Political Theory at All Souls College, Oxford. Previously she was an assistant professor at St John’s College, Oxford, and a lecturer in philosophy at University College London.  She works on topics in epistemology, ethics, metaphilosophy, social and political philosophy, and feminism.
       </Member>
       <Member
         name="Andrew Janiak"
@@ -233,10 +163,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Janiak is Professor of Philosophy, Chair of the Department, and the
-        Chair of the Bass Society of Fellows at Duke. He is a co-leader of
-        Project Vox, an international enterprise that seeks to recover the lost
-        voices of women in the history of modern science and philosophy.
+        Andrew Janiak is a Professor of philosophy, former Chair of the Bass Society of Fellows, and former Chair of the Department at Duke University. He is a co-leader of Project Vox, an international enterprise that seeks to recover the lost voices of women in the history of modern science and philosophy.
       </Member>
       <Member
         name="Greg Peterson"
@@ -244,12 +171,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Gregory R. Peterson is Professor of Philosophy and Religion and Director
-        of the Ethics Lab at South Dakota State University. His current research
-        areas include virtue theory, political philosophy, applied ethics, and
-        experimental ethics. Dr. Peterson is the recipient of numerous grants
-        and fellowships, including from the National Science Foundation, the
-        National Endowment for the Humanities, and the John Templeton
+        Greg Peterson is a Professor of Philosophy & Religion and Director of the Ethics Lab at South Dakota State University. His current research areas include virtue theory, political philosophy, ethics, and experimental ethics. Dr. Peterson is the recipient of numerous grants and fellowships, including from the National Science Foundation, the National Endowment for the Humanities, and the John Templeton Foundation.
         Foundation.
       </Member>
       <Member
@@ -258,14 +180,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Yannik Thiem&apos;s research interests include critical theory, social
-        and political philosophy, 19th- and 20th-century German philosophy,
-        feminist theory, and digital humanities. Recent work includes the book
-        Unbecoming Subjects: Judith Butler, Moral Philosophy, and Critical
-        Responsibility; Ripples of Redemptive Time: The Ethics and Politics of
-        Temporality in Hermann Cohen and Walter Benjamin, and the book project
-        in progress, Politics of Affect: Race, Religion, Sex, and Other
-        Monsters.
+        Yannik Thiem is an Associate Professor, in the Department of Religion at Columbia University. Thiem’s research interests include gender and sexuality, religion and politics, philosophy of religion, critical theory, and queer theory. Recent work includes the book Unbecoming Subjects: Judith Butler, Moral Philosophy, and Critical Responsibility; Ripples of Redemptive Time: The Ethics and Politics of Temporality in Hermann Cohen and Walter Benjamin, and the book project in progress, Politics of Affect: Race, Religion, Sex, and Other Monsters.
       </Member>
       <br />
       <br />
@@ -276,14 +191,7 @@ export default function About() {
         position=""
         className="staff"
       >
-        Jevin is an Associate Professor in the Information School at the
-        University of Washington. He co-founded the DataLab and direct the
-        Center for an Informed Public. He studies the Science of Science and
-        worries about the spread of misinformation. He develops knowledge
-        discovery tools to both study and facilitate science. In particular, His
-        is interested in the origin of scholarly disciplines and how
-        sociological and economic factors drive and slow the evolution of
-        science.
+        Jevin West is an Associate Professor and director Director for the Center for an Informed Public at University of Washington. He is the Co-director of the DataLab and Co-founder and Director of the Center for an Informed Public. He studies the Science of Science and worries about the spread of misinformation. He develops knowledge discovery tools to both study and facilitate science. In particular, His is interested in the origin of scholarly disciplines and how sociological and economic factors drive and slow the evolution of science.
       </Member>
       <Member
         name="Michael Nekrasov "
@@ -291,10 +199,7 @@ export default function About() {
         position=""
         className="staff"
       >
-        Michael has a Ph.D from UC Santa Barbara in Computer Science. His work
-        focuses on wireless networks in challenged environments. In this project
-        he provides technical support such as statistical analysis of large data
-        sets, and web development.
+        Michael Nekrasov is a Researcher in Computer Science at University of Santa Barbara. He has his Ph.D. in Computer Science, and his research focuses on the filed of technologies for environmental and disaster monitoring, as well as wireless networks in challenged environments. In this project he provides technical support such as statistical analysis of large data sets, and web development.
       </Member>
       <Member
         name="Irina Artamonova "
@@ -302,9 +207,7 @@ export default function About() {
         position=""
         className="staff"
       >
-        Irina Artamonova is a Statistics currently working at the Division of
-        Global Public Health, University of California, San Diego. Irina does
-        research in Statistics, Public Health and Psychiatry.
+        Irina Artamonova is a Statistician currently working at the Division of Global Public Health, at University of California, San Diego. Irina does research in Statistics, Public Health and Psychiatry.
       </Member>
       <Member
         name="Katrina England"
@@ -312,8 +215,8 @@ export default function About() {
         position=""
         className="student"
       >
-        Katrina England is a PhD Candidate in the Social Political Ethical and
-        Legal (SPEL) philosophy program at Binghamton University.
+        Katrina England is a PhD candidate in Philosophy at Binghamton University. She developed the Critical Thinking Lba to train seniors to help other students in writing different analytical projects. She has instructed and served as a teaching assistant in many different classes during her time at Binghamton.
+
       </Member>
       <Member
         name="Zayna Hustoft"
@@ -331,9 +234,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Jenn Dum is a Ph.D. Student in Philosophy at Binghamton University,
-        SUNY. Her research interests are in Social and Political Philosophy,
-        Applied Ethics, and Philosophy of Education.
+        Jenn Dum has a PhD in Philosophy from Binghamton University. She now works as an LSAT Test Developer on the Law School Admission Council. While at Binghamton, her research interests included Social and Political Philosophy, Applied Ethics, and Philosophy of Education.
       </Member>
       <Member
         name=" Aaron Schultz"
@@ -341,12 +242,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Aaron Schultz is a PhD student at Binghamton University in the
-        philosophy program. He is primarily interested in Buddhist ethics,
-        Buddhist meditation practices, and Metaethics. Before discovering his
-        passion for philosophy, Aaron studied film and video production at Grand
-        Valley State University. He also holds an MA in philosophy from Kent
-        State University.
+        Aaron Schultz is a PhD candidate in Philosophy at Binghamton University. He also works as an instructor at Binghamton University. He is primarily interested in Buddhist ethics, Buddhist meditation practices, and Metaethics. Before discovering his passion for philosophy, Aaron studied film and video production at Grand Valley State University. He also holds an MA in philosophy from Kent State University.
       </Member>
       <Member
         name="Junyi Dong"
@@ -354,8 +250,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Junyi Dong is a Ph.D student at Binghamton University mathematics
-        department.
+        Junyi Dong is an Assistant Professor in the Math Department at St Ambrose College. She earned her PhD in Mathematics at Binghamton University.
       </Member>
       <Member
         name="Morgan Thompson"
@@ -363,12 +258,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Morgan Thompson is a PhD student in the Department of History and
-        Philosophy of Science at the University of Pittsburgh. Her work is
-        primarily in philosophy of science and philosophy of neuroscience. She
-        also has research interests in the causes of underrepresentation of
-        various groups in philosophy and potential interventions to improve
-        philosophy&apos;s climate for members of those groups.
+        Morgan Thompson is a Postdoctoral Fellow at Bielefeld University. She earned her PhD in the Department of History and Philosophy of Science at the University of Pittsburgh. Her work focuses on social and political values in science, public trust in science, and philosophy in science. She also has research interests in the causes of underrepresentation of various groups in philosophy and potential interventions to improve philosophy's climate for members of those groups.
       </Member>
       <Member
         name="Mark Fortney"
@@ -376,8 +266,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Mark is a PhD student at the University of Toronto. He mostly works on
-        philosophy of mind and cognitive science.
+        Mark Fortney is an Assistant Professor in Philosophy at the University of Toronto, where he earned in PhD in Philosophy. His research focuses on attention and what makes it valuable for us. Similarly, he also works on philosophy of mind and cognitive science
       </Member>
       <Member
         name="Ben Bronner"
@@ -385,8 +274,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Ben is a graduate student in the philosophy department at Rutgers
-        University. He is primarily interested in normative and applied ethics.
+        Ben Bronner is a Teaching Assistant Professor of Strategic Management & Public Policy at the George Washington University School of Business (GWSB). 
       </Member>
       <Member
         name="Isaac Wilhelm"
@@ -394,12 +282,7 @@ export default function About() {
         position=""
         className="student"
       >
-        Isaac is a graduate student in the philosophy department at Rutgers
-        University. He has a B.A. in mathematics and a B.A. in film theory from
-        the University of Chicago, and an M.A. in philosophy from Tufts
-        University. His research is currently focused on philosophy of science
-        and metaphysics, though he has also worked in logic, formal
-        epistemology, and the philosophy of language.
+        Isaac Wilhelm has a PhD in Philosophy from Rutgers University. Starting in Fall 2021, he will begin working as an Assistant Professor with a presidential young professorship at the National University of Singapore. He has a B.A. in mathematics and a B.A. in film theory from the University of Chicago, and an M.A. in philosophy from Tufts University. His research is currently focused on philosophy of science and metaphysics, though he has also worked in logic, formal epistemology, and the philosophy of language.
       </Member>
       <Member
         name="Astrid Paulsson"
@@ -432,10 +315,7 @@ export default function About() {
         position=""
         className="other"
       >
-        Lia Shaked is a senior double majoring in Studio Art with a
-        concentration in Art and Design and Psychology. She was the web designer
-        for the Global Health Impact, and hopes to find a career in the graphic
-        design field.
+        Lia Shaked is a Senior Product Designer at Questex. She was the web designer for the Global Health Impact, and hopes to find a career in the graphic design field.
       </Member>
       <Member
         name="Eric Krebs"
@@ -443,7 +323,7 @@ export default function About() {
         position=""
         className="other"
       >
-        Eric Krebs is a junior at Xavier High School in Manhattan, NY.
+        Eric Krebs is currently attending Yale University, where he is pursuing a dual degree in economics and anthropology.
       </Member>
       <Member
         name="Jean Krebs"
@@ -451,10 +331,7 @@ export default function About() {
         position=""
         className="other"
       >
-        Jean Krebs is a junior at Binghamton University double majoring in
-        Philosophy, Politics and Law and Women, Gender, and Sexuality Studies.
-        In the future, she will be pursuing a law degree and a Master’s in
-        Public Health.
+        Jean Krebs is an Associate at Garfunkel Wild, P.C., and Senior Fellow at Gitenstein Institute for Health Law & Policy.
       </Member>
     </Layout>
   );
