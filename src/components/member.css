@@ -26,13 +26,13 @@
 
 .member .pi{
     border-top-color: #005780;
-    height: 395px;
+    height: 410px;
 }
 
 
 .member .advisor{
     border-top-color: #800006 ;
-    height: 395px;
+    height: 450px;
 }
 
 .member .student{
@@ -53,7 +53,7 @@
 .member .about{
     font-size: small;
     color: #000;
-    text-align: left;
+    text-align: justify;
 }
 
 

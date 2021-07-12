@@ -58,7 +58,7 @@ export default function About() {
         position="(Co-Director)"
         className="pi"
       >
-        Sherri Conklin- Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
+        Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
       </Member>
       <h1>Advisory Board</h1>
       <Member
@@ -75,7 +75,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Tom Dougherty- Tom Dougherty is an associate Professor in philosophy at the University of North Carolina at Chapel Hill. Formerly, he worked as a University Lecturer in the Philosophy Faculty at the University of Cambridge and a Fellow of Trinity Hall. His research focuses on moral and political philosophy, as well as consequentialism, and he is currently writing books on the ethics of consent. 
+        Tom Dougherty is an associate Professor in philosophy at the University of North Carolina at Chapel Hill. Formerly, he worked as a University Lecturer in the Philosophy Faculty at the University of Cambridge and a Fellow of Trinity Hall. His research focuses on moral and political philosophy, as well as consequentialism, and he is currently writing books on the ethics of consent. 
       </Member>
       <Member
         name="Kathryn Norlock"
