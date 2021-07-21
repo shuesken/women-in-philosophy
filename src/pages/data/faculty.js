@@ -175,8 +175,8 @@ export const Summary = {
         <ul>
             <li>2004 - 2015 Data - Julie Van Camp </li>
             <li>2009 Data - Sally Haslanger </li>
-            <li>2015 Data - Hassoun, N </li>
-            <li><strong>NEW: </strong> 2019 Dataset by Peterson, Greg; Hustoft, Zayna</li>
+            <li>2015 Data - Nicole Hassoun </li>
+            <li><strong>NEW: </strong> 2019 Dataset by Greg Peterson; Zayna Hustoft</li>
         </ul>
 
         </>,
@@ -317,7 +317,7 @@ export default function(props) {
 
         <h3>2004 - 2015 Data - Julie Van Camp </h3>
         <h3>2009 Data - Sally Haslanger </h3>
-        <h3>2015 Data - Hassoun, N </h3>
+        <h3>2015 Data - Nicole Hassoun </h3>
         <p>Each of the schools (for Hassoun, 2015 data) was triple checked and checked at least one time by a graduate student. If there are discrepancies, we believe they may reflect faculty additions and subtractions since the time of our survey. Regretfully, not every change can be kept up with since the time of the survey. Regardless, the numbers here provided an accurate picture of the gender divisions within the field of philosophy. Please note some of the particulars of our data collection below.</p>
 
         <p>Some outlier faculty positions were research faculty and teaching faculty. The department was contacted directly to confirm how to categorize things. Sometimes research faculty were assistant, associate, or full professor, sometimes not. Some non tenure-track research professors were in a special case put under lecturer to reflect their non-tenure track status. Some teaching faculty were placed under lecturer, some under assistant, associate, or full professor. Another issue came down to titles like part-time lecturer. These were confirmed to be either a regular lecturer position that is more stable than an adjunct position, or simply an adjunct position that is more contingent.</p>
@@ -330,7 +330,7 @@ export default function(props) {
 
         <p>Our methodology is largely in agreement with the methodology of the other rankings from past years by Sally Haslinger and Julie C. Van Camp. Sally Haslinger counted as “full time professor” those who are on tenure track (assistant, associate, full) and may have counted those who are adjuncts or lecturers as well as some affiliated professors as full time. We all refer to assistant, associate and full professors as “tenure track”. Finally, we follow Julie C. Van Camp in using pronouns and other common indicators of gender to determine gender, and also in following up individually to clarify ambiguous names.</p>
 
-        <h3>2019 Data by Peterson, Greg; Hustoft, Zayna </h3>
+        <h3>2019 Data by Greg Peterson; Zayna Hustoft </h3>
         <p>The <a href={"https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IJZW8Y"} > 2019 Dataset</a> was collected by <a href={"https://www.sdstate.edu/directory/gregory-peterson"}>Dr. Greg Paterson</a>.
             <br/>DOI:<a href={"https://doi.org/10.7910/DVN/IJZW8Y"}>10.7910/DVN/IJZW8Y</a>
         </p>
