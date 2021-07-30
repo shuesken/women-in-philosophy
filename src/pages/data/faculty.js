@@ -171,12 +171,12 @@ export const Summary = {
     title: "Faculty Data (2004 - 2019)",
     page: "faculty",
     summary: <>
-        This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslanger in 2009.
+        This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslinger in 2009.
         <br/><br/>
 
         <ul>
             <li>2004 - 2015 Data - Julie Van Camp </li>
-            <li>2009 Data - Sally Haslanger </li>
+            <li>2009 Data - Sally Haslinger </li>
             <li>2015 Data - Nicole Hassoun </li>
             <li><strong>NEW: </strong> 2019 Dataset by Greg Peterson; Zayna Hustoft</li>
         </ul>
@@ -227,7 +227,7 @@ export default function(props) {
 
     return <Layout>
         <h1>{Summary.title}</h1>
-        <p>This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslanger in 2009. </p>
+        <p>This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslinger in 2009. </p>
 
 
             <h3>Percent of Tenure Track Women Faculty in {year}</h3>
@@ -318,7 +318,7 @@ export default function(props) {
 
 
         <h3>2004 - 2015 Data - Julie Van Camp </h3>
-        <h3>2009 Data - Sally Haslanger </h3>
+        <h3>2009 Data - Sally Haslinger </h3>
         <h3>2015 Data - Nicole Hassoun </h3>
         <p>Each of the schools (for Hassoun, 2015 data) was triple checked and checked at least one time by a graduate student. If there are discrepancies, we believe they may reflect faculty additions and subtractions since the time of our survey. Regretfully, not every change can be kept up with since the time of the survey. Regardless, the numbers here provided an accurate picture of the gender divisions within the field of philosophy. Please note some of the particulars of our data collection below.</p>
 
