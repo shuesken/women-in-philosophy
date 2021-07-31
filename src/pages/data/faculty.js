@@ -174,6 +174,8 @@ export const Summary = {
         This study focuses on the number of women and men at 98 philosophy departments in the US. We present new data on the number of women and men at 50 programs ranked by the Philosophical Gourmet Report (PGR) as well as 48 programs not ranked by the PGR. We selected these programs based on the availability of the only existing historical data compiled by Julie Van Camp between 2004 and 2015 and Sally Haslinger in 2009.
         <br/><br/>
 
+        <h2>Dataset development overseen by</h2>
+
         <ul>
             <li>2004 - 2015 Data - Julie Van Camp </li>
             <li>2009 Data - Sally Haslinger </li>
@@ -315,7 +317,8 @@ export default function(props) {
         <br/>
         <br/>
         <h2>Methods</h2>
-
+        
+        <h2>Dataset development overseen by</h2>
 
         <h3>2004 - 2015 Data - Julie Van Camp </h3>
         <h3>2009 Data - Sally Haslinger </h3>
