@@ -1,0 +1,48 @@
+.guidelines-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 10em;
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+.guidelines-content {
+  padding-right: 1em;
+}
+
+.guidelines-nav {
+  margin-top: 3rem;
+  padding-left: 0;
+  border-left: 1px solid #efefef;
+  position: sticky;
+  top: 6rem;
+  align-self: start;
+}
+
+.guidelines-nav a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out;
+  /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.guidelines-nav a:hover,
+.guidelines-nav a:focus {
+  color: #666;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}

@@ -26,6 +26,7 @@
     "react-dom": "^16.13.x",
     "react-helmet": "^6.x",
     "react-icons": "^3.x",
+    "react-intersection-observer": "^8.33.1",
     "react-youtube": "^7.x"
   },
   "keywords": [

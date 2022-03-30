@@ -53,6 +53,12 @@ export default ({ active, className, children }) => (
                 Home
               </Nav.Link>
               <Nav.Link
+                href="/practices"
+                className={active === "practices" ? "active" : ""}
+              >
+                Good Practices{" "}
+              </Nav.Link>
+              <Nav.Link
                 href="/data"
                 className={active === "explore" ? "active" : ""}
               >
