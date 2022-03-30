@@ -60,6 +60,14 @@ export default function About() {
       >
         Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
       </Member>
+      <Member
+        name="Elly Vintiadis"
+        photo={profileImage.vintiadis}
+        position="(Co-Director)"
+        className="pi"
+      >
+        Elly Vintiadis teaches philosophy at Deree - The American college of Greece. Her work is mainly in the philosophy of mind and of psychiatry but also in epistemology, animal ethics and metaphilosophy. She is editor of Philosophy by Women (Routledge, 2020), first editor of Brute Facts (Oxford University Press, 2018) and author of Animals and US (in Greek -EP Books, 2020). She also writes for a wider audience – both because she enjoys it and because she believes it is important that philosophical thinking is available and accessible to the wider public beyond academia.
+      </Member>
       <h1>Advisory Board</h1>
       <Member
         name="Sally Haslanger"
