@@ -126,14 +126,6 @@ export default function About() {
         Julie C. Vancamp is a Professor Emerita of Philosophy at California State University, Long Beach, where she teaches philosophy of law and applied ethics. She is currently Executive Director & Secretary-Treasurer of the American Society for Aesthetics. She was privileged to study with Elizabeth Lane Beardsley at Temple University and inspired to encourage women to pursue philosophy by a former male colleague who told her long ago that 'female philosopher is an oxymoron.'
       </Member>
       <Member
-        name="Ruth Chang"
-        photo={profileImage.chang}
-        position=""
-        className="advisor"
-      >
-        Ruth Chang is a Professor and the Chair of Jurisprudence at the University of Oxford, a Professorial Fellow of University College, Oxford, and an American professor of philosophy. Formerly, she worked as a Professor of Philosophy at Rutgers University, New Brunswick. Before arriving at Rutgers, she was a Junior Research Fellow at Balliol College, Oxford where she was completing her dissertation. She has also held visiting positions in the philosophy department at the University of California, Los Angeles and the University of Chicago Law School. Before her life as a philosopher, she worked as a law associate on a (pro bono) death penalty case and several (non pro bono) product liability cases. She has a J.D. from Harvard Law School and an A.B. from Dartmouth College. Some of her current academic interests include population ethics, the nature of normativity, commitment, and the self.
-      </Member>
-      <Member
         name="Kenneth Clatterbaugh"
         photo={profileImage.clatterbaugh}
         position=""
