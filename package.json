@@ -14,7 +14,7 @@
     "gatsby-plugin-netlify-cache": "^1.x",
     "gatsby-plugin-react-helmet": "^3.3.x",
     "gatsby-plugin-react-svg": "^3.0.x",
-    "gatsby-plugin-robots-txt": "^1.x",
+    "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-plugin-sharp": "^2.6.x",
     "gatsby-plugin-sitemap": "^2.x",
     "gatsby-source-filesystem": "^2.3.x",
