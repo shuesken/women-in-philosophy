@@ -1,4 +1,4 @@
-.guidelines-wrapper {
+.practices-wrapper {
   display: grid;
   grid-template-columns: 1fr 10em;
   max-width: 100em;
@@ -15,11 +15,11 @@ li {
   margin-left: 1rem;
 }
 
-.guidelines-content {
+.practices-content {
   padding-right: 1em;
 }
 
-.guidelines-nav {
+.practices-nav {
   margin-top: 3rem;
   padding-left: 0;
   border-left: 1px solid #efefef;
@@ -28,7 +28,7 @@ li {
   align-self: start;
 }
 
-.guidelines-nav a {
+.practices-nav a {
   text-decoration: none;
   display: block;
   padding: .125rem 0;
@@ -37,8 +37,8 @@ li {
   /* 💡 This small transition makes setting of the active state smooth */
 }
 
-.guidelines-nav a:hover,
-.guidelines-nav a:focus {
+.practices-nav a:hover,
+.practices-nav a:focus {
   color: #666;
 }
 
