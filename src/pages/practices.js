@@ -66,7 +66,7 @@ console.log("signatories", signatories)
                     guidelines.
                   </p>
                   <p>
-                    Click <a href="#">here</a> to sign on.
+                    Click <a href="https://docs.google.com/forms/d/e/1FAIpQLScBBOQgMKe5FhD_9lF4c6GRPgO1zx3_173_A9dmk5ddrGsNJQ/viewform?usp=sf_link">here</a> to sign on.
                   </p>
                   <h2>List of Signatories</h2>
                   <h3>Departments</h3>
