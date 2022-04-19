@@ -38,7 +38,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/shuesken/women-in-philosophy.git"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
