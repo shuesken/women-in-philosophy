@@ -30,4 +30,5 @@ jobs:
         touch .env.production
         echo GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
     - run: npm ci
-    - run: npm run deploy
+    - run: npm i -g gatsby
+    - run: gatsby build --prefix-paths && gh-pages -d public -r https://${{ secrets.GITHUB_TOKEN }}@github.com/shuesken/women-in-philosophy.git
