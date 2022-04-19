@@ -31,4 +31,5 @@ jobs:
         echo GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
     - run: npm ci
     - run: npm i -g gatsby gh-pages
+    - run: git config --global user.email "github@workflow.com" && git config --global user.name "gh-workflow"
     - run: gatsby build --prefix-paths && gh-pages -d public -r https://${{ secrets.GITHUB_TOKEN }}@github.com/shuesken/women-in-philosophy.git
