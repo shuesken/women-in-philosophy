@@ -39,127 +39,127 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---src-pages-data-jstor-js-c1ff225efb225fe95d46.js
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-b98bc800935208243e8b.js
+/webpack-runtime-2fec360d186411ce355e.js
   Cache-Control: public, max-age=31536000, immutable
 /framework-ddff9c6a94258f6c8286.js
   Cache-Control: public, max-age=31536000, immutable
-/app-9a8247fdfc21a0f2f80b.js
+/app-398018d1fdfcc645a520.js
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable
 /sw.js
   Cache-Control: no-cache
-/404/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </component---src-pages-404-js-09cf8c2cabb7ad2a7dd8.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
-/about/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </component---src-pages-about-js-5decddfefc75a130f59b.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
-/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </6cf92c46cdeddd10fef0c824d372ba303dd730fb-989999cdacc41e42d489.js>; rel=preload; as=script
-  Link: </component---src-pages-index-js-f3159bebd8d8accdbd79.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
-/practices/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </component---src-pages-practices-js-46a0769e0a0133c8e90d.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/practices/page-data.json>; rel=preload; as=fetch; crossorigin
-/resources/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </6cf92c46cdeddd10fef0c824d372ba303dd730fb-989999cdacc41e42d489.js>; rel=preload; as=script
-  Link: </component---src-pages-resources-js-d3a54b143a949b9721c6.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/resources/page-data.json>; rel=preload; as=fetch; crossorigin
-/data/faculty/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
-  Link: </74dca4d6c5a7f8526c139a94d07947a91fba485a-41c9bd7e2a8f12107f11.js>; rel=preload; as=script
-  Link: </component---src-pages-data-faculty-js-6cff1035663fe93cf3c8.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/data/faculty/page-data.json>; rel=preload; as=fetch; crossorigin
-/data/h_journal/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
-  Link: </74dca4d6c5a7f8526c139a94d07947a91fba485a-41c9bd7e2a8f12107f11.js>; rel=preload; as=script
-  Link: </component---src-pages-data-h-journal-js-40524f0286eabf6cecd0.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/data/h_journal/page-data.json>; rel=preload; as=fetch; crossorigin
-/data/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
-  Link: </74dca4d6c5a7f8526c139a94d07947a91fba485a-41c9bd7e2a8f12107f11.js>; rel=preload; as=script
-  Link: </component---src-pages-data-faculty-js-6cff1035663fe93cf3c8.js>; rel=preload; as=script
-  Link: </component---src-pages-data-index-js-60b168f7984d9a0042d8.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/data/page-data.json>; rel=preload; as=fetch; crossorigin
-/data/jstor/
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
-  Link: </component---src-pages-data-jstor-js-c1ff225efb225fe95d46.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/data/jstor/page-data.json>; rel=preload; as=fetch; crossorigin
-/404.html
-  Link: </webpack-runtime-b98bc800935208243e8b.js>; rel=preload; as=script
-  Link: </framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
-  Link: </app-9a8247fdfc21a0f2f80b.js>; rel=preload; as=script
-  Link: </styles-7d4153d260c0197f0043.js>; rel=preload; as=script
-  Link: </1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
-  Link: </commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
-  Link: </component---src-pages-404-js-09cf8c2cabb7ad2a7dd8.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/404/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-404-js-09cf8c2cabb7ad2a7dd8.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/about/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-about-js-5decddfefc75a130f59b.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/6cf92c46cdeddd10fef0c824d372ba303dd730fb-989999cdacc41e42d489.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-index-js-f3159bebd8d8accdbd79.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/practices/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-practices-js-46a0769e0a0133c8e90d.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/practices/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/resources/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/6cf92c46cdeddd10fef0c824d372ba303dd730fb-989999cdacc41e42d489.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-resources-js-d3a54b143a949b9721c6.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/resources/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/data/faculty/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
+  Link: </women-in-philosophy/74dca4d6c5a7f8526c139a94d07947a91fba485a-41c9bd7e2a8f12107f11.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-data-faculty-js-6cff1035663fe93cf3c8.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/data/faculty/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/data/h_journal/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
+  Link: </women-in-philosophy/74dca4d6c5a7f8526c139a94d07947a91fba485a-41c9bd7e2a8f12107f11.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-data-h-journal-js-40524f0286eabf6cecd0.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/data/h_journal/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/data/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
+  Link: </women-in-philosophy/74dca4d6c5a7f8526c139a94d07947a91fba485a-41c9bd7e2a8f12107f11.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-data-faculty-js-6cff1035663fe93cf3c8.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-data-index-js-60b168f7984d9a0042d8.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/data/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/data/jstor/
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/4a3ea9cd-476dd1c99a0f366f2a43.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/967a575965aef03ced9a1998c37212b117d08260-29ce33443dd87f35a906.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-data-jstor-js-c1ff225efb225fe95d46.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/data/jstor/page-data.json>; rel=preload; as=fetch; crossorigin
+/women-in-philosophy/404.html
+  Link: </women-in-philosophy/webpack-runtime-2fec360d186411ce355e.js>; rel=preload; as=script
+  Link: </women-in-philosophy/framework-ddff9c6a94258f6c8286.js>; rel=preload; as=script
+  Link: </women-in-philosophy/app-398018d1fdfcc645a520.js>; rel=preload; as=script
+  Link: </women-in-philosophy/styles-7d4153d260c0197f0043.js>; rel=preload; as=script
+  Link: </women-in-philosophy/1bfc9850-d972b0c81402efcce96c.js>; rel=preload; as=script
+  Link: </women-in-philosophy/commons-746aa50dfe7f334a0786.js>; rel=preload; as=script
+  Link: </women-in-philosophy/component---src-pages-404-js-09cf8c2cabb7ad2a7dd8.js>; rel=preload; as=script
+  Link: </women-in-philosophy/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </women-in-philosophy/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
