@@ -24,7 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      env:
-        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+    - run: |
+        touch .env.production
+        echo GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
     - run: npm ci
     - run: npm run deploy
