@@ -24,6 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: |
         touch .env.production
         echo GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
