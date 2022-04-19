@@ -1,2 +1,2 @@
-Sitemap: https://mikrasov.com/women-in-philosophy/sitemap/sitemap-index.xml
+Sitemap: https://mikrasov.com/sitemap/sitemap-index.xml
 Host: https://mikrasov.com
