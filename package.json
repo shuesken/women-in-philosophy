@@ -36,9 +36,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/shuesken/women-in-philosophy.git"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
