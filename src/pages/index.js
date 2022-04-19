@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery, Link } from "gatsby";
 import Img from "gatsby-image";
 import YouTube from "react-youtube";
 import Layout from "../components/layout";
@@ -44,12 +44,12 @@ const IndexPage = () => (
             different kinds of departments.{" "}
           </p>
           <p>
-            This site provides some new <a href="/data">data</a> on disparities
+            This site provides some new <Link to="data">data</Link> on disparities
             between the proportion of women and men in faculty hiring and
             publishing.
           </p>
           <p>
-            We also provide some further <a href="/resources">Resources</a> for
+            We also provide some further <Link to="resources">Resources</Link> for
             those who want to make a difference for women in philosophy. For
             some summary information, see{" "}
             <a href="https://blog.apaonline.org/2018/03/26/tell-us-how-to-fix-the-lack-of-diversity-in-philosophy-journals/">

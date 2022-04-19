@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 
 
 import "./practices.css";
-import IndividualSignatory from "../components/individual-signatory";
+import Signatory from "../components/signatory";
 
 const PracticesPage = () => {
   // const { ref, inView, entry } = useInView({});
@@ -17,16 +17,25 @@ const PracticesPage = () => {
       allSignatory {
         edges {
           node {
-            limits
             name
-            dept
+            entity
+            id
+            comments
           }
         }
       }
     }
   `)
 
-  const listItems = data.allSignatory.edges.map(signatory => IndividualSignatory(signatory.node));
+
+
+  const signatories = data.allSignatory.edges.map(signatory => signatory.node);
+  const departmentElems = signatories.filter(s => s.entity === "department").map(Signatory)
+  const journalElems = signatories.filter(s => s.entity === "journal").map(Signatory)
+  const societyElems = signatories.filter(s => s.entity === "society").map(Signatory)
+  const leaderElems = signatories.filter(s => s.entity === "leader").map(Signatory)
+
+console.log("signatories", signatories)
 
 
   return (
@@ -60,12 +69,24 @@ const PracticesPage = () => {
                     Click <a href="#">here</a> to sign on.
                   </p>
                   <h2>List of Signatories</h2>
+                  <h3>Departments</h3>
                   <ul>
-                    {listItems}
-                    <li>Jane Doe, University of Somewhere</li>
-                    <li>Mary Wollstonecraft, Institute for Other Things</li>
-                    <li>Valerie Solanas, Center for Applied Feminism</li>
+                    {departmentElems}
                   </ul>
+                  <h3>Journals</h3>
+                  <ul>
+                    {journalElems}
+                  </ul>
+                  <h3>Learned Societies</h3>
+                  <ul>
+                    {societyElems}
+                  </ul>
+                  <h3>Project Leaders</h3>
+                  <ul>
+                    {leaderElems}
+                  </ul>
+                  
+                  
                 </div>
                 <div id="adoption" className="adoption">
                   <h1>Adoption of Good Practice policies: Procedure</h1>
@@ -295,7 +316,7 @@ const PracticesPage = () => {
               <nav className="practices-nav">
                 <ol>
                   <li>
-                    <a href="#overview">Oerview</a>
+                    <a href="#overview">Overview</a>
                   </li>
                   <li>
                     <a href="#adoption">Adoption</a>
