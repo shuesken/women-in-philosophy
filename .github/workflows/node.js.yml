@@ -31,6 +31,7 @@ jobs:
         touch .env.production
         echo GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} >> .env.production
     - run: npm ci
+    - run: npm run build
    
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
