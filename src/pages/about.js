@@ -67,6 +67,22 @@ export default function About() {
       >
         Elly Vintiadis teaches philosophy at Deree - The American college of Greece. Her work is mainly in the philosophy of mind and of psychiatry but also in epistemology, animal ethics and metaphilosophy. She is editor of Philosophy by Women (Routledge, 2020), first editor of Brute Facts (Oxford University Press, 2018) and author of Animals and US (in Greek -EP Books, 2020). She also writes for a wider audience – both because she enjoys it and because she believes it is important that philosophical thinking is available and accessible to the wider public beyond academia.
       </Member>
+      <Member
+        name="Lori Gruen"
+        photo={profileImage.gruen}
+        position="(Co-Director)"
+        className="pi"
+      >
+        Lori Gruen is William Griffin Professor of Philosophy, Professor of Feminist, Gender, and Sexuality Studies, and Professor of Science in Society at Wesleyan University where she also coordinates Wesleyan Animal Studies.  She is the author and editor of over a dozen books, most recently “Animal Crisis” (co-authored with Alice Crary) and “Carceral Logics” (co-edited with Justin Marceau).  As of July 1, 2022 she will serve as Chair of the APA’s Committee on the Status of Women. 
+      </Member>
+      <Member
+        name="Björn Freter"
+        photo={profileImage.freter}
+        position="(Co-Director)"
+        className="pi"
+      >
+        Björn lives in Knoxville, TN, USA and works as Lecturer for World Philosophy at the School of Oriental and African Studies (SOAS) at the University of London, UK. He has published on a variety of topics, including pre-Socratic philosophy, baroque and classical German literature as well as African Philosophy, Matters of Decolonization, White Supremacy, Misogyny and Veganism. His current main research project aims at the Desuperiorization of Philosophy, ie. developing a radically anti-oppressive moral philosophy, and at the Foundation of Superaltern Studies, a research area investigating the western superiorist traditions and its self-representation as global moral authority.
+      </Member>
       <h1>Advisory Board</h1>
       <Member
         name="Sally Haslanger"
@@ -133,12 +149,12 @@ export default function About() {
         Kenneth C. Clatterbaugh is an American philosopher. He was Chair of the department of Philosophy at the University of Washington for fifteen years. He retired in 2012. His interests are modern philosophy, social philosophy, and gender studies.
       </Member>
       <Member
-        name="Charles Mills"
+        name="In Memoriam Charles Mills"
         photo={profileImage.mills}
         position=""
         className="advisor"
       >
-        Charles W. Mills is a Distinguished Professor of Philosophy at the Graduate Center CUNY. Formerly, he taught at the University of Oklahoma, the University of Illinois at Chicago, and Northwestern University. He was also the President of the American Philosophical Association Central Division. His research interests include social and political philosophy, Africana philosophy, critical philosophy of race, and ethics. 
+        Charles W. Mills was a Distinguished Professor of Philosophy at the Graduate Center CUNY. Formerly, he taught at the University of Oklahoma, the University of Illinois at Chicago, and Northwestern University. He was also the President of the American Philosophical Association Central Division. His research also explored social and political philosophy, Africana philosophy, critical philosophy of race, and ethics. He is remembered with adoration and respect by his colleagues and community.
       </Member>
       <Member
         name="Meena Krishnamurthy"
@@ -307,6 +323,21 @@ export default function About() {
         California, Santa Barbara with a BA in Philosophy and has plans to
         pursue a PhD. She is interested in normative theory, applied ethics, and
         logic.
+      </Member>
+      <Member
+        name="Diana Dedi"
+        photo={profileImage.dedi}
+        position=""
+        className="student"
+      >
+        Diana Dedi is an MBA candidate at Binghamton University. She also earned a B.A. in Philosophy, Politics, and Law in 2022 at Binghamton University. Her research interests include improving inclusivity within the philosophy discipline and finding solutions to the global access to medicines problem.
+      </Member>
+      <Member
+        name="Natalie Pompi"
+        photo={profileImage.pompi}
+        position=""
+        className="student"
+      >
       </Member>
       <Member
         name="Lia Shaked"
