@@ -62,7 +62,7 @@ export default ({ active, className, children }) => (
                 href={withPrefix("/data")}
                 className={active === "explore" ? "active" : ""}
               >
-                Explore Data{" "}
+                Data on Women{" "}
               </Nav.Link>
               <Nav.Link
                 href={withPrefix("/resources")}
