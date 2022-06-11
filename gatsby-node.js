@@ -4,14 +4,14 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
- require("dotenv").config({
+require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
-  })
+})
 
 
 const { google } = require('googleapis')
 const API_KEY = process.env.GOOGLE_API_KEY
-const opts = { version: 'v4', auth: API_KEY}
+const opts = { version: 'v4', auth: API_KEY }
 const sheets = google.sheets(opts)
 const range = 'A:E'
 const spreadsheetId = '1q1PPp1JiyVJTflTSq3G_xDh2mWlqrGyuitMi_V29slE'
@@ -22,7 +22,7 @@ exports.sourceNodes = async ({
     createContentDigest,
     createNodeId
 }) => {
-    const response = await sheets.spreadsheets.values.get({spreadsheetId, range})
+    const response = await sheets.spreadsheets.values.get({ spreadsheetId, range })
     const values = response.data.values
     if (values.length <= 1) throw Error('no content in spreadsheet')
     values.shift() // remove header row
@@ -53,12 +53,9 @@ exports.sourceNodes = async ({
         if (!row[2]) throw Error("no name given")
         obj.name = row[2]
 
-        obj.comments = row[4] ?? ''
+        obj.link = row[3] ?? ''
 
-        if(!row[3]) {
-            console.warn(obj.name + " did not accept the guidelines")
-            return
-        }
+        obj.exceptions = row[4] ?? ''
 
         objs.push(obj)
     })
@@ -68,8 +65,8 @@ exports.sourceNodes = async ({
         parent: null,
         children: [],
         internal: {
-          type: `Signatory`,
-          contentDigest: createContentDigest(obj),
+            type: `Signatory`,
+            contentDigest: createContentDigest(obj),
         },
         ...obj
     }))
