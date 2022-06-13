@@ -11,6 +11,12 @@ import Signatory from "../components/signatory";
 
 const PracticesPage = () => {
   const [showProcedure, setShowProcedure] = useState(false);
+  const [open, setOpen] = useState({
+    departments: false,
+    journals: false,
+    societies: false,
+    groups: false
+  })
   const toggleShowProcedure = () => {
     setShowProcedure(!showProcedure)
   }
@@ -50,38 +56,52 @@ const PracticesPage = () => {
               In line with the APA Strategic Plan's Objective to make the discipline “more inclusive, welcoming, and accessible" and supporting their effort to regularly “review, update, promote, and add to existing guidance and best practices to support diversity, equity, and inclusion throughout the discipline" the Demographics in Philosophy project proposes the following guidelines. We believe these practices will, if adopted, create a more welcoming and inclusive environment for all - including women, people of color, disabled people, non-native English speakers, first generation college students, those with serious economic needs or from developing countries, LBGTQ+ people, and people with political or religious views that are under-represented in the discipline, amongst others. We hope these suggestions will act as a starting point for improving the conditions for everyone in our discipline. The following guidelines promote equal opportunities for under-represented groups in philosophy and support and encourage  academic excellence of all kinds.
             </p>
             <p>
-              Click <a href={withPrefix("/GoodPractices.pdf")}>here</a> to go straight to a document or click on the guidelines on the right and click <a href="#" onClick={toggleShowProcedure}>here</a> for the adoption procedure
+              Click <a href="#" onClick={toggleShowProcedure}>here</a> for the adoption procedure
             </p>
-            {showProcedure && <div>
+            <div className={showProcedure ? '' : 'hidden'}>
               <h2>How the Good Practices Scheme Works</h2>
 
-              <p>Consider whether and how to implement Good Practices recommendations.</p>
-              <ol>
-                <li>If you choose to implement the recommendations, inform the Good Practices Secretariat that you will establish a plan to implement the recommendations within a year. To facilitate planning we provide <a href={withPrefix("/ImplementationTemplate.pdf")}>this template</a> that you can use. Note that for departments, journals, and learned societies, there are different sets of recommendations that are applicable.</li>
-                <li>Then inform the Good Practices Secretariat when your plan is in place with a concrete timeline for implementation to move from “commitment” to “adoption” status. </li>
-                <li>
-                  We also encourage you to advertise your commitment and use our GPS logo and we will link back to websites which display your commitment to these Good Practices.
+              <p>Consider whether and how to implement Good Practices recommendations. Click <a href={withPrefix("/GoodPractices.pdf")}>here</a> to go straight to a document containing all of them or select the portions relevant to you from the list on the right.</p>
+              <ol className="procedure">
+                <li>If you choose to implement the recommendations, inform the Good Practices Secretariat that you will establish a plan to implement the recommendations within a year.
+                  Use <a href="https://docs.google.com/forms/d/e/1FAIpQLScBBOQgMKe5FhD_9lF4c6GRPgO1zx3_173_A9dmk5ddrGsNJQ/viewform?usp=sf_link">this link</a> to sign on.
+                  To facilitate planning we provide <a href={withPrefix("/ImplementationTemplate.pdf")}>this template</a> that you can use. Note that for departments, journals, and learned societies, there are different sets of recommendations that are applicable.</li>
+                <li>Then inform the Good Practices Secretariat when your plan is in place with a concrete timeline for implementation to move from “commitment” to “adoption” status.</li>
+                <li><p>
+                  We also encourage you to advertise your commitment and use our GPS logo and we will link back to websites which display your commitment to these Good Practices.</p>
                 </li>
               </ol>
-            </div>}
+            </div>
+
           </div>
           <div className="col-sm-3">
-            <ul>
+            <h2>Good Practices Documents</h2>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, departments: !open.departments })}>> Departments</h3>
+            <ul className={open.departments ? '' : 'hidden'}>
               <li><a href={withPrefix("/HiringRetentionPromotion.pdf")}>Hiring, Retention, and Promotion</a></li>
               <li><a href={withPrefix("/Teaching.pdf")}>Teaching</a></li>
               <li><a href={withPrefix("/HarrassmentStaffStudentRelationships.pdf")}>Harrassment and Staff-Student Relationships</a></li>
               <li><a href={withPrefix("/Caregivers.pdf")}>Caregivers</a></li>
-              <li><a href={withPrefix("/ConferencesEvents.pdf")}>Conferences and Events</a></li>
-              <li><a href={withPrefix("/ResearchProjects.pdf")}>Research Projects</a></li>
-              <li><a href={withPrefix("/LearnedSocieties.pdf")}>Learned Societies</a></li>
+            </ul>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, journals: !open.journals })}>> Journals</h3>
+            <ul className={open.journals ? '' : 'hidden'}>
               <li><a href={withPrefix("/Journals.pdf")}>Journals</a></li>
+            </ul>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, societies: !open.societies })}>> Learned Societies</h3>
+            <ul className={open.societies ? '' : 'hidden'}>
+              <li><a href={withPrefix("/ConferencesEvents.pdf")}>Conferences and Events</a></li>
+              <li><a href={withPrefix("/LearnedSocieties.pdf")}>Learned Societies</a></li>
+            </ul>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, groups: !open.groups })}>> Research Groups</h3>
+            <ul className={open.groups ? '' : 'hidden'}>
+              <li><a href={withPrefix("/ResearchProjects.pdf")}>Research Projects</a></li>
+              <li><a href={withPrefix("/HiringRetentionPromotion.pdf")}>Hiring, Retention, and Promotion</a></li>
+              <li><a href={withPrefix("/Caregivers.pdf")}>Caregivers</a></li>
             </ul>
           </div>
         </div>
-        <p>
-          Click <a href="https://docs.google.com/forms/d/e/1FAIpQLScBBOQgMKe5FhD_9lF4c6GRPgO1zx3_173_A9dmk5ddrGsNJQ/viewform?usp=sf_link">here</a> to sign on.
-        </p>
-        <h2>Department Signatories</h2>
+        <h2>Signatories</h2>
+
         <table className="table">
           <thead>
             <tr>
@@ -94,7 +114,6 @@ const PracticesPage = () => {
             {departmentElems}
           </tbody>
         </table>
-        <h2>Journal Signatories</h2>
         <table className="table">
           <thead>
             <tr>
@@ -107,7 +126,6 @@ const PracticesPage = () => {
             {journalElems}
           </tbody>
         </table>
-        <h2>Learned Society Signatories</h2>
         <table className="table">
           <thead>
             <tr>
@@ -120,7 +138,6 @@ const PracticesPage = () => {
             {societyElems}
           </tbody>
         </table>
-        <h2>Project Leader Signatories</h2>
         <table className="table">
           <thead>
             <tr>

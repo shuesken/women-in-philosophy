@@ -31,7 +31,7 @@ export default function About() {
   return (
     <Layout>
       <strong>Contact us at:</strong>{" "}
-      <a href="mailto:dataonwomen@gmail.com">dataonwomen@gmail.com</a>
+      <a href="mailto:demphilproj@gmail.com">demphilproj@gmail.com</a>
       <br />
       <br />
       <h1>Directors</h1>
