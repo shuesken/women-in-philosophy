@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { graphql, useStaticQuery, withPrefix } from "gatsby";
+import Img from "gatsby-image";
+
 // import { useInView } from "react-intersection-observer";
 import Layout from "../components/layout";
 
@@ -34,24 +36,40 @@ const PracticesPage = () => {
           }
         }
       }
+      sealImage: file(relativePath: { eq: "seal.png" }) {
+          childImageSharp {
+            fixed(width: 70) {
+              ...GatsbyImageSharpFixed_withWebp_tracedSVG
+            }
+          }
+        }
     }
   `)
 
   const signatories = data.allSignatory.edges.map(signatory => signatory.node);
-  console.log('signatories', signatories)
   const departmentElems = signatories.filter(s => s.entity === "department").map(Signatory)
   const journalElems = signatories.filter(s => s.entity === "journal").map(Signatory)
   const societyElems = signatories.filter(s => s.entity === "society").map(Signatory)
   const leaderElems = signatories.filter(s => s.entity === "leader").map(Signatory)
 
-  console.log(departmentElems)
-
   return (
     <>
       <Layout>
-        <h1>Good Practices for Improving Representation</h1>
+
         <div className="row">
           <div className="col-sm-9">
+            <div className="row">
+              <div className="col-sm-9">
+                <h1>Good Practices for Improving Representation</h1>
+              </div>
+              <div className="col-sm-3">
+                <Img
+                  className="seal"
+                  fixed={data.sealImage.childImageSharp.fixed}
+                />
+              </div>
+            </div>
+
             <p>
               In line with the APA Strategic Plan's Objective to make the discipline “more inclusive, welcoming, and accessible" and supporting their effort to regularly “review, update, promote, and add to existing guidance and best practices to support diversity, equity, and inclusion throughout the discipline" the Demographics in Philosophy project proposes the following guidelines. We believe these practices will, if adopted, create a more welcoming and inclusive environment for all - including women, people of color, disabled people, non-native English speakers, first generation college students, those with serious economic needs or from developing countries, LBGTQ+ people, and people with political or religious views that are under-represented in the discipline, amongst others. We hope these suggestions will act as a starting point for improving the conditions for everyone in our discipline. The following guidelines promote equal opportunities for under-represented groups in philosophy and support and encourage  academic excellence of all kinds.
             </p>
