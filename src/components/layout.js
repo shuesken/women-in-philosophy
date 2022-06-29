@@ -20,7 +20,7 @@ export default ({ active, className, children }) => (
           }
         }
 
-        bannerImage: file(relativePath: { eq: "womenbanner.jpg" }) {
+        bannerImage: file(relativePath: { eq: "demographicsbanner.png" }) {
           childImageSharp {
             fluid(maxWidth: 1100) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG

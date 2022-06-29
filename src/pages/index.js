@@ -17,7 +17,7 @@ const IndexPage = () => (
   <StaticQuery
     query={graphql`
       {
-        bannerImage: file(relativePath: { eq: "womenbanner.jpg" }) {
+        bannerImage: file(relativePath: { eq: "demographicsbanner.png" }) {
           childImageSharp {
             fluid(maxWidth: 1100) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -35,7 +35,7 @@ const IndexPage = () => (
           </div>
           <h1>What do you want to find out?</h1>
           <p>
-          For the past decade or so, the lack of diversity in philosophy has received considerable attention. Though a number of studies have shown that there has been some progress made in the demographics of philosophy in the past decade, the progress is slow and disparities persist. (See for example, <a href="https://www.journals.uchicago.edu/doi/full/10.1086/718075">Hassoun, Conklin, Nekrasov, and West 2022</a>; <a href="https://www.philosophersmag.com/essays/244-the-diversity-of-philosophy-students-and-faculty-in-the-united-states">Schwitzgebel, Bright, Jennings, Thompson, and Winsberg 2021</a>; and other <Link to ="resources">resources on the resources page</Link>.)
+            For the past decade or so, the lack of diversity in philosophy has received considerable attention. Though a number of studies have shown that there has been some progress made in the demographics of philosophy in the past decade, the progress is slow and disparities persist. (See for example, <a href="https://www.journals.uchicago.edu/doi/full/10.1086/718075">Hassoun, Conklin, Nekrasov, and West 2022</a>; <a href="https://www.philosophersmag.com/essays/244-the-diversity-of-philosophy-students-and-faculty-in-the-united-states">Schwitzgebel, Bright, Jennings, Thompson, and Winsberg 2021</a>; and other <Link to="resources">resources on the resources page</Link>.)
           </p>
           <p>
             A culture change is needed in philosophy. To foster this change we, the Demographics in Philosophy project, have done a few things. First, we have collected existing data on the representation of women in philosophy and put together a list of data based resources that may help us see more clearly what has gone wrong, how things have been changing over time, and to understand representation within different journals, professorial types, and ranks at different kinds of departments. On this site you can explore data on disparities between the proportion of those who are, and those who are not, under-represented in faculty hiring and publishing. You find resources for increasing diversity in philosophy and bibliographical information on surveys and large-scale empirical studies on the problem of underrepresentation in philosophy.
