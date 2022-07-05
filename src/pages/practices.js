@@ -58,17 +58,7 @@ const PracticesPage = () => {
 
         <div className="row">
           <div className="col-sm-9">
-            <div className="row">
-              <div className="col-sm-9">
-                <h1>Good Practices for Improving Representation</h1>
-              </div>
-              <div className="col-sm-3">
-                <Img
-                  className="seal"
-                  fixed={data.sealImage.childImageSharp.fixed}
-                />
-              </div>
-            </div>
+            <h1>Good Practices for Improving Representation</h1>
 
             <p>
               In line with the APA Strategic Plan's Objective to make the discipline “more inclusive, welcoming, and accessible" and supporting their effort to regularly “review, update, promote, and add to existing guidance and best practices to support diversity, equity, and inclusion throughout the discipline" the Demographics in Philosophy project proposes the following guidelines. We believe these practices will, if adopted, create a more welcoming and inclusive environment for all - including women, people of color, disabled people, non-native English speakers, first generation college students, those with serious economic needs or from developing countries, LBGTQ+ people, and people with political or religious views that are under-represented in the discipline, amongst others. We hope these suggestions will act as a starting point for improving the conditions for everyone in our discipline. The following guidelines promote equal opportunities for under-represented groups in philosophy and support and encourage  academic excellence of all kinds.
@@ -93,6 +83,11 @@ const PracticesPage = () => {
 
           </div>
           <div className="col-sm-3">
+            <Img
+              className="seal"
+              fixed={data.sealImage.childImageSharp.fixed}
+            />
+
             <h2>Good Practices Documents</h2>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, departments: !open.departments })}>> Departments</h3>
             <ul className={open.departments ? '' : 'hidden'}>

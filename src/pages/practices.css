@@ -58,3 +58,8 @@ html {
 .procedure {
   list-style: outside;
 }
+
+.seal {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
