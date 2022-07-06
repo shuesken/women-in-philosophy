@@ -53,6 +53,7 @@ html {
 
 .practices-section-header:hover {
   cursor: pointer;
+  color: grey;
 }
 
 .procedure {

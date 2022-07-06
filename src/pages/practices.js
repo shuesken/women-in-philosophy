@@ -89,23 +89,23 @@ const PracticesPage = () => {
             />
 
             <h2>Good Practices Documents</h2>
-            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, departments: !open.departments })}>> Departments</h3>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, departments: !open.departments })}>Departments:</h3>
             <ul className={open.departments ? '' : 'hidden'}>
               <li><a href={withPrefix("/HiringRetentionPromotion.pdf")}>Hiring, Retention, and Promotion</a></li>
               <li><a href={withPrefix("/Teaching.pdf")}>Teaching</a></li>
               <li><a href={withPrefix("/HarrassmentStaffStudentRelationships.pdf")}>Harrassment and Staff-Student Relationships</a></li>
               <li><a href={withPrefix("/Caregivers.pdf")}>Caregivers</a></li>
             </ul>
-            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, journals: !open.journals })}>> Journals</h3>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, journals: !open.journals })}>Journals:</h3>
             <ul className={open.journals ? '' : 'hidden'}>
               <li><a href={withPrefix("/Journals.pdf")}>Journals</a></li>
             </ul>
-            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, societies: !open.societies })}>> Learned Societies</h3>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, societies: !open.societies })}>Learned Societies:</h3>
             <ul className={open.societies ? '' : 'hidden'}>
               <li><a href={withPrefix("/ConferencesEvents.pdf")}>Conferences and Events</a></li>
               <li><a href={withPrefix("/LearnedSocieties.pdf")}>Learned Societies</a></li>
             </ul>
-            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, groups: !open.groups })}>> Research Groups</h3>
+            <h3 className="practices-section-header" onClick={() => setOpen({ ...open, groups: !open.groups })}>Research Groups:</h3>
             <ul className={open.groups ? '' : 'hidden'}>
               <li><a href={withPrefix("/ResearchProjects.pdf")}>Research Projects</a></li>
               <li><a href={withPrefix("/HiringRetentionPromotion.pdf")}>Hiring, Retention, and Promotion</a></li>
