@@ -94,6 +94,8 @@ const IndexPage = () => (
       <li><a href="http://schwitzsplinters.blogspot.com/2017/12/women-have-been-earning-30-34-of.html">Women Have Been
         Earning 30-34% of Philosophy BAs in the US Since Approximately Forever</a></li>
       <li><a href="http://hdl.handle.net/2027/spo.3521354.0016.006.">Why do women leave philosophy? </a></li>
+      <li><a href="https://www.gendertalks.com">Gender Talks</a></li>
+      <li><a href="https://www.womeninphilosophy.com">Women in Philosophy</a></li>
     </ul>
     <h2>Journal and Publishing Information</h2>
     <ul>
