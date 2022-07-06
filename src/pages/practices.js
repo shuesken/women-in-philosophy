@@ -114,8 +114,7 @@ const PracticesPage = () => {
           </div>
         </div>
         <h2>Signatories</h2>
-
-        <table className="table">
+        <table className="signatories">
           <thead>
             <tr>
               <th scope="col">Department</th>
@@ -127,7 +126,7 @@ const PracticesPage = () => {
             {departmentElems}
           </tbody>
         </table>
-        <table className="table">
+        <table className="signatories">
           <thead>
             <tr>
               <th scope="col">Journal</th>
@@ -139,7 +138,7 @@ const PracticesPage = () => {
             {journalElems}
           </tbody>
         </table>
-        <table className="table">
+        <table className="signatories">
           <thead>
             <tr>
               <th scope="col">Learned Society</th>
@@ -151,7 +150,7 @@ const PracticesPage = () => {
             {societyElems}
           </tbody>
         </table>
-        <table className="table">
+        <table className="signatories">
           <thead>
             <tr>
               <th scope="col">Project Leader</th>
