@@ -33,7 +33,7 @@ const IndexPage = () => (
             {" "}
             <Img fluid={data.bannerImage.childImageSharp.fluid} />{" "}
           </div>
-          <h1>What do you want to find out?</h1>
+          <h1>Welcome! What do you want to find out?</h1>
           <p>
             For the past decade or so, the lack of diversity in philosophy has received considerable attention. Though a number of studies have shown that there has been some progress made in the demographics of philosophy in the past decade, the progress is slow and disparities persist. (See for example, <a href="https://www.journals.uchicago.edu/doi/full/10.1086/718075">Hassoun, Conklin, Nekrasov, and West 2022</a>; <a href="https://www.philosophersmag.com/essays/244-the-diversity-of-philosophy-students-and-faculty-in-the-united-states">Schwitzgebel, Bright, Jennings, Thompson, and Winsberg 2021</a>; and other <Link to="resources">resources on the resources page</Link>.)
           </p>
