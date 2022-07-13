@@ -31,10 +31,9 @@ const IndexPage = () => (
         of Philosophy Students and Faculty in the United States: Recent Data from Several Sources by Eric
         Schwitzgebel</a></li>
       <li><a href="http://www.apaonline.org/?demographics" target="_blank">APA Membership Demographics.</a></li>
-      <li><a href="http://www.apaonline.org/?page%3Ddiversity_resources" target="_blank">APA Resources on Diversity and Inclusiveness.</a>
+      <li><a href="https://www.apaonline.org/page/diversity_resources" target="_blank">APA Resources on Diversity and Inclusiveness.</a>
       </li>
       <li><a href="http://bpa.ac.uk/resources/women-in-philosophy/good-practice" target="_blank">BPA/SWIP Best Practices</a></li>
-      <li><a href="http://www.theupdirectory.com/" target="_blank">The UPDirectory</a></li>
       <li><a href="https://www.apaonline.org/page/asian_newsletter" target="_blank">APA Newsletter on Asian and Asian American
         Philosophers and Philosophies</a></li>
       <li><a href="https://blog.apaonline.org/2019/09/03/graduatestudentsdiversityinclusivity/" target="_blank">Graduate Students on
@@ -66,7 +65,7 @@ const IndexPage = () => (
       <li><a href="https://historyofwomenphilosophers.org/project/directory-of-women-philosophers/" target="_blank">Directory of Women
         Philosophers</a></li>
       <li><a
-        href="https://docs.google.com/viewer?a%3Dv%26pid%3Dsites%26srcid%3DZGVmYXVsdGRvbWFpbnxhcGFjb21taXR0ZWVvbnRoZXN0YXR1c29md29tZW58Z3g6NThlNmFiNTZjMTc5ZDE0Mw" target="_blank">Survey
+        href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhcGFjb21taXR0ZWVvbnRoZXN0YXR1c29md29tZW58Z3g6NThlNmFiNTZjMTc5ZDE0Mw" target="_blank">Survey
         of Earned Doctorates %Women - Haslanger</a></li>
       <li><a href="https://doi.org/10.7910/DVN/IJZW8Y" target="_blank">Women’s Representation in U.S. Philosophy Graduate Programs</a>
       </li>
@@ -130,7 +129,7 @@ const IndexPage = () => (
     </ul>
     <h2>Mentoring</h2>
     <ul>
-      <li><a href="http://www.philosophy.ku.edu/mentoring-project/" target="_blank">The Mentoring Project for Pre-tenure Women Faculty in
+      <li><a href="https://philosophy.ku.edu/documents" target="_blank">The Mentoring Project for Pre-tenure Women Faculty in
         Philosophy.</a></li>
       <li><a href="http://www.piksi.org/" target="_blank">Philosophy in an Inclusive Key Summer Institute (PIKSI).</a></li>
       <li><a href="http://spwp.ucsd.edu/" target="_blank">The UCSD Summer Program for Women in Philosophy (UCSD SPWP).</a></li>
@@ -153,9 +152,8 @@ const IndexPage = () => (
       <li><a href="http://consc.net/norms.html" target="_blank">Guidelines for respectful, constructive, and inclusive philosophical
         discussion.</a></li>
       <li><a href="https://sites.google.com/site/adrianmitchellcurrie/inclusiveness" target="_blank">Inclusiveness.</a></li>
-      <li><a href="http://www.apaonline.org/members/group_content_view.asp?group%3D110430%26id%3D380970" target="_blank">Diversity and
+      <li><a href="http://www.apaonline.org/members/group_content_view.asp?group=110430&id=380970" target="_blank">Diversity and
         Inclusive Syllabus Collection</a></li>
-      <li><a href="http://www.socalmap.org/" target="_blank">SoCal Map Graduate Working Group on Inclusive Pedagogy</a></li>
       <li><a href="http://www.teachphilosophy101.org/" target="_blank">Teach Philosophy 101.</a></li>
     </ul>
     <h2>Diversity</h2>
@@ -164,8 +162,7 @@ const IndexPage = () => (
         href="https://www.nytimes.com/2016/05/11/opinion/if-philosophy-wont-diversify-lets-call-it-what-it-really-is.html" target="_blank">Opinion
         | If Philosophy Won't Diversify, Let's Call It What It Really Is - The New York Times</a></li>
       <li><a href="https://diversityreadinglist.org/about/" target="_blank">Diversity Reading List</a></li>
-      <li><a href="https://engagedphilosophy.org/" target="_blank">Centre</a></li>
-      <li><a href="https://engagedphilosophy.org/" target="_blank"> for Engaged Philosophy</a></li>
+      <li><a href="https://engagedphilosophy.org/" target="_blank">Centre for Engaged Philosophy</a></li>
     </ul>
   </Layout>
 );
