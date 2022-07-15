@@ -1,4 +1,4 @@
-import schedule from "@netlify/functions"
+import { schedule } from "@netlify/functions"
 import fetch from "node-fetch";
 
 const BUILD_HOOK = process.env.BUILD_HOOK
