@@ -1,13 +1,12 @@
 import schedule from "@netlify/functions"
 import fetch from "node-fetch";
 
-const WEBHOOK_ID = process.env.WEBHOOK_BUILD_ID;
-const API_ENDPOINT = "https://api.netlify.com/build_hooks/" + WEBHOOK_ID;
+const BUILD_HOOK = process.env.BUILD_HOOK
 
 const handler = async function (event, context) {
     console.log("Received event:", event)
 
-    return fetch(API_ENDPOINT, { method: 'POST' })
+    return fetch(BUILD_HOOK, { method: 'POST' })
         .then(data => ({
             statusCode: 200,
         }))
