@@ -22,7 +22,7 @@ exports.sourceNodes = async ({
     createContentDigest,
     createNodeId
 }) => {
-    const response = await sheets.spreadsheets.values.get({ SPREADSHEET_ID, range })
+    const response = await sheets.spreadsheets.values.get({ spreadsheetId: SPREADSHEET_ID, range })
     const values = response.data.values
     if (values.length <= 1) throw Error('no content in spreadsheet')
     values.shift() // remove header row
