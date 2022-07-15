@@ -14,7 +14,7 @@ const API_KEY = process.env.GOOGLE_API_KEY
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID
 const opts = { version: 'v4', auth: API_KEY }
 const sheets = google.sheets(opts)
-const range = 'A:E'
+const range = 'A:F'
 
 
 exports.sourceNodes = async ({
