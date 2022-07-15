@@ -11,10 +11,10 @@ require("dotenv").config({
 
 const { google } = require('googleapis')
 const API_KEY = process.env.GOOGLE_API_KEY
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID
 const opts = { version: 'v4', auth: API_KEY }
 const sheets = google.sheets(opts)
 const range = 'A:E'
-const spreadsheetId = '1q1PPp1JiyVJTflTSq3G_xDh2mWlqrGyuitMi_V29slE'
 
 
 exports.sourceNodes = async ({
@@ -22,7 +22,7 @@ exports.sourceNodes = async ({
     createContentDigest,
     createNodeId
 }) => {
-    const response = await sheets.spreadsheets.values.get({ spreadsheetId, range })
+    const response = await sheets.spreadsheets.values.get({ SPREADSHEET_ID, range })
     const values = response.data.values
     if (values.length <= 1) throw Error('no content in spreadsheet')
     values.shift() // remove header row
@@ -55,7 +55,7 @@ exports.sourceNodes = async ({
 
         obj.link = row[3] ?? ''
 
-        obj.exceptions = row[4] ?? ''
+        obj.exceptions = row[5] ?? ''
 
         objs.push(obj)
     })

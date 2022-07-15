@@ -7,7 +7,7 @@ const handler = async function (event, context) {
     console.log("Received event:", event)
 
     return fetch(BUILD_HOOK, { method: 'POST' })
-        .then(data => ({
+        .then(() => ({
             statusCode: 200,
         }))
         .catch(error => ({ statusCode: 422, body: String(error) }));
