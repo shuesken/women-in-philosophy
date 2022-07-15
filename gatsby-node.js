@@ -43,7 +43,7 @@ exports.sourceNodes = async ({
             case "Learned Society":
                 obj.entity = "society"
                 break;
-            case "Project Leader":
+            case "Research Project Leader":
                 obj.entity = "leader"
                 break;
             default:
