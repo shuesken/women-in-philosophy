@@ -3,8 +3,7 @@ import Layout from "../components/layout";
 
 const IndexPage = () => (
   <Layout>
-    <h1>Resources</h1>
-    <h2>Inclusivity within the Discipline</h2>
+    <h1>Inclusivity within the Discipline</h1>
     <ul>
       <li><a href="https://www.apaonline.org/page/demographics" target="_blank">Member Demographics - The American Philosophical
         Association</a></li>
@@ -53,7 +52,7 @@ const IndexPage = () => (
         href="https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780190622879.001.0001/oxfordhb-9780190622879-e-5" target="_blank">Philosophy
         and the Apparatus of Disability - Oxford Handbooks</a></li>
     </ul>
-    <h2>Women in Philosophy</h2>
+    <h1>Women in Philosophy</h1>
     <ul>
       <li><a href="https://www.journals.uchicago.edu/doi/10.1086/718075" target="_blank">The Past 110 Years: Historical Data on the
         Underrepresentation of Women in Philosophy Journals* | Ethics: Vol 132, No 3</a></li>
@@ -96,7 +95,7 @@ const IndexPage = () => (
       <li><a href="https://www.gendertalks.com" target="_blank">Gender Talks</a></li>
       <li><a href="https://www.womeninphilosophy.com" target="_blank">Women in Philosophy</a></li>
     </ul>
-    <h2>Journal and Publishing Information</h2>
+    <h1>Journal and Publishing Information</h1>
     <ul>
       <li><a href="https://schwitzsplinters.blogspot.com/2016/01/publications-by-black-authors-in-leiter.html" target="_blank">The
         Splintered Mind: Publications By Black Authors in Leiter Top 15 Journals 2003-2012</a></li>
@@ -127,14 +126,14 @@ const IndexPage = () => (
       <li><a href="https://doi.org/10.1080/05568641.2018.1464729" target="_blank">Linguistic injustice and analytic philosophy:
         Introduction, Philosophical Papers,</a></li>
     </ul>
-    <h2>Mentoring</h2>
+    <h1>Mentoring</h1>
     <ul>
       <li><a href="https://philosophy.ku.edu/documents" target="_blank">The Mentoring Project for Pre-tenure Women Faculty in
         Philosophy.</a></li>
       <li><a href="http://www.piksi.org/" target="_blank">Philosophy in an Inclusive Key Summer Institute (PIKSI).</a></li>
       <li><a href="http://spwp.ucsd.edu/" target="_blank">The UCSD Summer Program for Women in Philosophy (UCSD SPWP).</a></li>
     </ul>
-    <h2>Implicit Bias & Stereotype Threat</h2>
+    <h1>Implicit Bias & Stereotype Threat</h1>
     <ul>
       <li><a href="http://biasproject.org/" target="_blank">Implicit Bias & Philosophy International Research Project.</a></li>
       <li><a href="https://www.youtube.com/watch?v%3DFM6mbSiD3eA" target="_blank">Cultures of Brilliance and Academic Gender Gaps -
@@ -146,7 +145,7 @@ const IndexPage = () => (
         href="http://www.philosophy.rutgers.edu/graduate-program/climate/133-graduate/climate/530-climate-for-women-stereotype-threat" target="_blank">Stereotype
         Threat</a></li>
     </ul>
-    <h2>Pedagogy</h2>
+    <h1>Pedagogy</h1>
     <ul>
       <li><a href="http://phildiversity.weebly.com/" target="_blank">Best practices for the Inclusive Philosophy Classroom</a></li>
       <li><a href="http://consc.net/norms.html" target="_blank">Guidelines for respectful, constructive, and inclusive philosophical
@@ -156,7 +155,7 @@ const IndexPage = () => (
         Inclusive Syllabus Collection</a></li>
       <li><a href="http://www.teachphilosophy101.org/" target="_blank">Teach Philosophy 101.</a></li>
     </ul>
-    <h2>Diversity</h2>
+    <h1>Diversity</h1>
     <ul>
       <li><a
         href="https://www.nytimes.com/2016/05/11/opinion/if-philosophy-wont-diversify-lets-call-it-what-it-really-is.html" target="_blank">Opinion
