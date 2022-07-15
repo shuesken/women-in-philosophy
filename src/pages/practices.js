@@ -72,7 +72,7 @@ const PracticesPage = () => {
               <p>Consider whether and how to implement Good Practices recommendations. Click <a href={withPrefix("/GoodPractices.pdf")}>here</a> to go straight to a document containing all of them or select the portions relevant to you from the list on the right.</p>
               <ol className="procedure">
                 <li>If you choose to implement the recommendations, inform the Good Practices Secretariat that you will establish a plan to implement the recommendations within a year.
-                  Use <a href="https://docs.google.com/forms/d/e/1FAIpQLScBBOQgMKe5FhD_9lF4c6GRPgO1zx3_173_A9dmk5ddrGsNJQ/viewform?usp=sf_link">this link</a> to sign on.
+                  Use <a href="https://docs.google.com/forms/d/e/1FAIpQLScBBOQgMKe5FhD_9lF4c6GRPgO1zx3_173_A9dmk5ddrGsNJQ/viewform?usp=sf_link" target="_blank">this link</a> to sign on.
                   To facilitate planning we provide <a href={withPrefix("/ImplementationTemplate.pdf")}>this template</a> that you can use. Note that for departments, journals, and learned societies, there are different sets of recommendations that are applicable.</li>
                 <li>Then inform the Good Practices Secretariat when your plan is in place with a concrete timeline for implementation to move from “commitment” to “adoption” status.</li>
                 <li><p>
@@ -91,25 +91,25 @@ const PracticesPage = () => {
             <h2>Good Practices Documents</h2>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, departments: !open.departments })}>Departments</h3>
             <ul className={open.departments ? '' : 'hidden'}>
-              <li><a href={withPrefix("/HiringRetentionPromotion.pdf")}>Hiring, Retention, and Promotion</a></li>
-              <li><a href={withPrefix("/Teaching.pdf")}>Teaching</a></li>
-              <li><a href={withPrefix("/HarrassmentStaffStudentRelationships.pdf")}>Harrassment and Staff-Student Relationships</a></li>
-              <li><a href={withPrefix("/Caregivers.pdf")}>Caregivers</a></li>
+              <li><a href={withPrefix("/HiringRetentionPromotion.pdf")} target="_blank">Hiring, Retention, and Promotion</a></li>
+              <li><a href={withPrefix("/Teaching.pdf")} target="_blank">Teaching</a></li>
+              <li><a href={withPrefix("/HarrassmentStaffStudentRelationships.pdf")} target="_blank">Harrassment and Staff-Student Relationships</a></li>
+              <li><a href={withPrefix("/Caregivers.pdf")} target="_blank">Caregivers</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, journals: !open.journals })}>Journals</h3>
             <ul className={open.journals ? '' : 'hidden'}>
-              <li><a href={withPrefix("/Journals.pdf")}>Journals</a></li>
+              <li><a href={withPrefix("/Journals.pdf")} target="_blank">Journals</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, societies: !open.societies })}>Learned Societies</h3>
             <ul className={open.societies ? '' : 'hidden'}>
-              <li><a href={withPrefix("/ConferencesEvents.pdf")}>Conferences and Events</a></li>
-              <li><a href={withPrefix("/LearnedSocieties.pdf")}>Learned Societies</a></li>
+              <li><a href={withPrefix("/ConferencesEvents.pdf")} target="_blank">Conferences and Events</a></li>
+              <li><a href={withPrefix("/LearnedSocieties.pdf")} target="_blank">Learned Societies</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, groups: !open.groups })}>Research Groups</h3>
             <ul className={open.groups ? '' : 'hidden'}>
-              <li><a href={withPrefix("/ResearchProjects.pdf")}>Research Projects</a></li>
-              <li><a href={withPrefix("/HiringRetentionPromotion.pdf")}>Hiring, Retention, and Promotion</a></li>
-              <li><a href={withPrefix("/Caregivers.pdf")}>Caregivers</a></li>
+              <li><a href={withPrefix("/ResearchProjects.pdf")} target="_blank">Research Projects</a></li>
+              <li><a href={withPrefix("/HiringRetentionPromotion.pdf")} target="_blank">Hiring, Retention, and Promotion</a></li>
+              <li><a href={withPrefix("/Caregivers.pdf")} target="_blank">Caregivers</a></li>
             </ul>
           </div>
         </div>
