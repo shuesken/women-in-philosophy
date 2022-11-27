@@ -75,6 +75,14 @@ export default function About() {
       >
         Björn lives in Knoxville, TN, USA and works as Lecturer for World Philosophy at the School of Oriental and African Studies (SOAS) at the University of London, UK. He has published on a variety of topics, including pre-Socratic philosophy, baroque and classical German literature as well as African Philosophy, Matters of Decolonization, White Supremacy, Misogyny and Veganism. His current main research project aims at the Desuperiorization of Philosophy, ie. developing a radically anti-oppressive moral philosophy, and at the Foundation of Superaltern Studies, a research area investigating the western superiorist traditions and its self-representation as global moral authority.
       </Member>
+      <Member
+        name="Lori Gruen"
+        photo={profileImage.gruen}
+        position=""
+        className="(Co-Director)"
+      >
+        Lori Gruen is William Griffin Professor of Philosophy, Professor of Feminist, Gender, and Sexuality Studies, and Professor of Science in Society at Wesleyan University where she also coordinates Wesleyan Animal Studies. She is the author and editor of over a dozen books, most recently “Animal Crisis” (co-authored with Alice Crary) and “Carceral Logics” (co-edited with Justin Marceau).  As of July 1, 2022 she will serve as Chair of the APA’s Committee on the Status of Women.
+      </Member>
       <h1>Advisory Board</h1>
       <Member
         name="Sally Haslanger"
@@ -188,14 +196,6 @@ export default function About() {
         className="advisor"
       >
         Yannik Thiem is an Associate Professor, in the Department of Religion at Columbia University. Thiem’s research interests include gender and sexuality, religion and politics, philosophy of religion, critical theory, and queer theory. Recent work includes the book Unbecoming Subjects: Judith Butler, Moral Philosophy, and Critical Responsibility; Ripples of Redemptive Time: The Ethics and Politics of Temporality in Hermann Cohen and Walter Benjamin, and the book project in progress, Politics of Affect: Race, Religion, Sex, and Other Monsters.
-      </Member>
-      <Member
-        name="Lori Gruen"
-        photo={profileImage.gruen}
-        position=""
-        className="advisor"
-      >
-        Lori Gruen is William Griffin Professor of Philosophy, Professor of Feminist, Gender, and Sexuality Studies, and Professor of Science in Society at Wesleyan University where she also coordinates Wesleyan Animal Studies.  She is the author and editor of over a dozen books, most recently “Animal Crisis” (co-authored with Alice Crary) and “Carceral Logics” (co-edited with Justin Marceau).  As of July 1, 2022 she will serve as Chair of the APA’s Committee on the Status of Women.
       </Member>
       <br />
       <br />
@@ -435,7 +435,7 @@ export default function About() {
         Jenn Dum has a PhD in Philosophy from Binghamton University. She now works as an LSAT Test Developer on the Law School Admission Council. While at Binghamton, her research interests included Social and Political Philosophy, Applied Ethics, and Philosophy of Education.
       </Member>
       <Member
-        name=" Aaron Schultz"
+        name="Aaron Schultz"
         photo={profileImage.schultz}
         position=""
         className="student"
@@ -522,6 +522,14 @@ export default function About() {
         className="student"
       >
         Natalie Pompi is a 2022 graduate of the State University of NY at Binghamton who received a bachelor’s of science in Human Development. She is currently taking a gap year before pursuing a master’s degree. Her research interests include studying the experiences of people based on their intersectional identities, with a focus on men’s experiences with masculinity and patriarchal violence.
+      </Member>
+      <Member
+        name="Yi Qian"
+        photo={profileImage.qian}
+        position=""
+        className="student"
+      >
+        Yi Qian is a senior student at Binghamton University. She is a Linguistics major and Global Studies minor. Her research interests include investigating the relationship between power and identity construction, with a focus on racial and sexual identity.
       </Member>
       <Member
         name="Lia Shaked"
