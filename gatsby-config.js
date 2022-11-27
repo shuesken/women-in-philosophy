@@ -69,12 +69,6 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    {
-      resolve: '@mkitio/gatsby-theme-password-protect',
-      options: {
-        password: 'wip' // delete or `undefined` to disable password protection
-      }
-    },
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
