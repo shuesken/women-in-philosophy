@@ -55,4 +55,4 @@ const IndexPage = () => (
   />
 );
 
-export default withAuth(IndexPage);
+export default IndexPage;

@@ -30,8 +30,7 @@ const AuthPage = () => {
 }
 
 function withAuth(comp) {
-    if (typeof window === "undefined") return AuthPage
-    const storedPass = window.localStorage.getItem(KEY) || new URLSearchParams(document.location.search).get(KEY)
+    const storedPass = (typeof window !== "undefined") ? (window.localStorage.getItem(KEY) || new URLSearchParams(document.location.search).get(KEY)) : ""
     return storedPass === PASSWORD ? comp : AuthPage
 }
 
