@@ -3,6 +3,7 @@ import { graphql, StaticQuery, Link, withPrefix } from "gatsby";
 import Img from "gatsby-image";
 import YouTube from "react-youtube";
 import Layout from "../components/layout";
+import { useState } from "react";
 
 const opts = {
   height: "390",
@@ -55,4 +56,37 @@ const IndexPage = () => (
   />
 );
 
-export default IndexPage;
+const KEY = "password"
+const AuthPage = () => {
+  const [password, setPassword] = useState('');
+
+  const onSubmit = event => {
+    event.preventDefault();
+    window.localStorage.setItem(KEY, password)
+    window.location.reload();
+  };
+
+  return (
+    <form onSubmit={onSubmit} style={{ "margin": "1em" }}>
+      <input
+        name="password"
+        value={password}
+        onChange={event => setPassword(event.target.value)}
+        placeholder="Enter password"
+      />
+
+      <button
+        type="submit"
+      >
+        Enter
+      </button>
+    </form>
+  );
+}
+
+function withAuth(password, comp) {
+  const storedPass = (typeof window !== "undefined") ? window.localStorage.getItem(KEY) : ""
+  return storedPass === password ? comp : AuthPage
+}
+
+export default withAuth("wip", IndexPage);
