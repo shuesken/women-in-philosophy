@@ -7,8 +7,10 @@ import Metadata from "./metadata";
 
 import "./bootstrap.min.css";
 import "./layout.css";
+import withAuth from "../utils/auth";
 
-export default ({ active, className, children }) => (
+
+const Layout = ({ active, className, children }) => (
   <StaticQuery
     query={graphql`
       {
@@ -111,3 +113,5 @@ export default ({ active, className, children }) => (
     )}
   />
 );
+
+export default withAuth(Layout)
