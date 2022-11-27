@@ -114,4 +114,4 @@ const Layout = ({ active, className, children }) => (
   />
 );
 
-export default withAuth(Layout)
+export default Layout

@@ -3,8 +3,7 @@ import { graphql, StaticQuery, Link, withPrefix } from "gatsby";
 import Img from "gatsby-image";
 import YouTube from "react-youtube";
 import Layout from "../components/layout";
-import { useState } from "react";
-
+import withAuth from "../utils/auth";
 const opts = {
   height: "390",
   width: "640",
@@ -56,4 +55,4 @@ const IndexPage = () => (
   />
 );
 
-export default IndexPage;
+export default withAuth(IndexPage);
